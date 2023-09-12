@@ -1,0 +1,19 @@
+/* PAGE ACCOMPAGNEMENT */
+section p {
+  width: 80%;
+  margin: auto;
+}
+
+/* PAGE ACCOMPAGNEMENT ENFANTS*/
+/* 1 */
+
+.accompagnement-enfant-1-container ul {
+  width: 60%;
+}
+
+/* 4 */
+
+.accompagnement-enfant-4 {
+  width: 40%;
+  border-radius: 100%;
+}

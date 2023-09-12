@@ -1,0 +1,138 @@
+header .nomEtContact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--beige-color);
+  opacity: 0.8;
+  padding: 10px;
+}
+
+header .nomEtContact .containerNom {
+  opacity: 0;
+  animation: fadein 2s forwards;
+  animation-delay: 1s;
+}
+header .nomEtContact .nom img {
+  width: 100px;
+  padding: 15px;
+  opacity: 0;
+  animation: fadein 2s forwards;
+  animation-delay: 10ms;
+}
+
+header .nomEtContact .nom {
+  display: flex;
+  align-items: center;
+}
+
+header .nomEtContact .etContact {
+  opacity: 0;
+  animation: fadein 2s forwards;
+  animation-delay: 2s;
+}
+
+/* le titre et le span logo */
+header .nomEtContact .etContact a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  background-color: var(--green-clear-color);
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li {
+  position: relative; /* Position relative pour le parent */
+  padding: 10px 0;
+}
+
+header nav ul li a {
+  color: black;
+  font-weight: bolder;
+}
+
+header nav ul li a:hover {
+  color: var(--brown-color);
+}
+
+/* DROP DOWN MENU  */
+.dropDown {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  position: absolute;
+  top: 100%;
+  left: -60%;
+  background: var(--green-clear-color);
+  z-index: 1;
+  border-radius: 10px;
+}
+header nav ul li:hover > .dropDown {
+  opacity: 1;
+  max-height: 1000px;
+}
+
+header .dropDown a {
+  width: 250px;
+  padding: 0;
+  font-weight: lighter;
+  padding: 5px;
+}
+header .dropDown a:hover {
+  color: var(--brown-color);
+}
+
+/* END DROP DOWN MENU  */
+
+/* MEDIA Queries */
+@media only screen and (max-width: 1160px) {
+  header .nomEtContact .nom img {
+    display: none;
+  }
+  header .nomEtContact {
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    margin: 0;
+  }
+  header nav ul li .dropDown {
+    position: initial;
+    opacity: 1;
+    max-height: 1000px;
+  }
+  header nav ul li .dropDown a {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes dropDownMenu {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,134 @@
+/* PAGE D'ACCUEIL */
+
+.carousell-container {
+  position: relative;
+  height: 180px;
+}
+.carousell-container img:first-child {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+
+.carousell-container h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: large;
+  margin: 0;
+}
+.rdv-section {
+  background-color: var(--beige-color);
+  padding: 0 0 25px;
+}
+
+.rdv-section p {
+  padding: 5px 0;
+  font-size: large;
+}
+.rdv-en-ligne {
+  background-color: var(--green-color);
+  color: white;
+  font-style: italic;
+
+  padding: 0 25px 5px 25px;
+  border-radius: 20px;
+}
+.rdv-en-ligne:hover {
+  color: var(--black-light-color);
+}
+.trois-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trois-articles article {
+  position: relative;
+}
+.trois-articles article p {
+  margin-bottom: 35px;
+}
+.trois-articles article a {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: var(--green-color);
+}
+.trois-articles article a:hover {
+  color: var(--black-light-color);
+}
+
+.trois-articles article:first-child {
+  background-color: var(--beige-darker-color);
+}
+.trois-articles article:nth-child(2) {
+  background-color: var(--green-clear-color);
+}
+
+.trois-articles article:nth-child(3) {
+  background-color: var(--brown-color);
+}
+
+.contact {
+  background-color: var(--black-light-color);
+  color: var(--beige-color);
+  padding: 10px;
+}
+.contact * {
+  color: var(--beige-color);
+}
+.contact article {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.contact article h3 {
+  font-size: larger;
+}
+
+/* .map  */
+.mapouter {
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 400px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 400px;
+}
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+@media only screen and (max-width: 1030px) {
+  .text-accueil-1 {
+    width: auto;
+  }
+
+  .container-p-img img {
+    margin-right: 0;
+  }
+  .trois-articles {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    color: red;
+  }
+  .accueil-1 {
+    width: 90%;
+    height: auto;
+  }
+  .text-accueil-1 {
+    top: 120%;
+  }
+}
