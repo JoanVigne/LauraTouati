@@ -103,9 +103,7 @@ header .dropDown a:hover {
     margin: 0;
   }
   header nav ul li .dropDown {
-    position: initial;
-    opacity: 1;
-    max-height: 1000px;
+    display: none;
   }
   header nav ul li .dropDown a {
     width: auto;
