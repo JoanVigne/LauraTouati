@@ -74,6 +74,10 @@ article {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.trois-articles article h3 {
+  margin: 10px;
+}
+
 .trois-articles article:first-child {
   background-color: var(--beige-darker-color);
 }

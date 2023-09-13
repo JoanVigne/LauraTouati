@@ -36,8 +36,10 @@ setInterval(() => {
   } else {
     indexQuotes++;
   }
-
   changeQuote();
+  setTimeout(() => {
+    changeImg();
+  }, 4500);
 }, 8000);
 
 function changeQuote() {
@@ -47,4 +49,8 @@ function changeQuote() {
     author.innerHTML = quotes[indexQuotes].author;
     quoteContainer.style.opacity = 1;
   }, 2000);
+}
+
+function changeImg() {
+  console.log("change image");
 }

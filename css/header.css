@@ -98,19 +98,39 @@ header .dropDown a:hover {
   header .nomEtContact {
     flex-direction: column;
   }
-  header nav ul {
-    flex-direction: column;
-    margin: 0;
-  }
-  header nav ul li .dropDown {
-    display: none;
-  }
-  header nav ul li .dropDown a {
-    width: auto;
-  }
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 768px) {
+  .etContact {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+  }
+  header nav ul li:first-child {
+    display: none;
+  }
+  header nav ul li {
+    width: 50%;
+    padding: 0;
+  }
+  header nav ul li .dropDown {
+    max-height: inherit;
+    opacity: 1;
+    position: inherit;
+    top: 0;
+    left: 0;
+  }
+  header nav ul li .dropDown a {
+    width: 90%;
+    padding: 0;
+    border: 2px var(--brown-color) solid;
+    border-radius: 20px;
+    padding: 5px;
+  }
 }
 
 @keyframes fadein {
