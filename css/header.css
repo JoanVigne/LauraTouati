@@ -12,17 +12,16 @@ header .nomEtContact .containerNom {
   animation: fadein 2s forwards;
   animation-delay: 1s;
 }
-header .nomEtContact .nom img {
-  width: 100px;
-  padding: 15px;
+header .nomEtContact .containerNom h3 {
+  font-weight: inherit;
+}
+
+header .nomEtContact img {
+  width: 140px;
+  padding: 5px;
   opacity: 0;
   animation: fadein 2s forwards;
   animation-delay: 10ms;
-}
-
-header .nomEtContact .nom {
-  display: flex;
-  align-items: center;
 }
 
 header .nomEtContact .etContact {
@@ -31,11 +30,12 @@ header .nomEtContact .etContact {
   animation-delay: 2s;
 }
 
-/* le titre et le span logo */
+/* le a et le logo */
 header .nomEtContact .etContact a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.5em;
 }
 
 header nav {
@@ -92,7 +92,7 @@ header .dropDown a:hover {
 
 /* MEDIA Queries */
 @media only screen and (max-width: 1160px) {
-  header .nomEtContact .nom img {
+  header .nomEtContact img {
     display: none;
   }
   header .nomEtContact {

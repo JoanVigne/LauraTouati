@@ -2,9 +2,19 @@ body {
   background: var(--beige-to-green-gradient);
 }
 
+h1 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 3.5em;
+  font-weight: inherit;
+  margin: -10px;
+}
+h2 {
+  font-size: 2em;
+}
 p {
   max-width: 80%;
   margin: 0 auto;
+  font-family: "Oxygen", sans-serif;
 }
 /* BUTTON TO GO TOP  */
 #goTop {
@@ -68,8 +78,10 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  p {
-    max-width: 98%;
+  article * {
+    margin: 10px auto;
+    max-width: 90%;
+    font-size: larger;
   }
   /* container P + IMG */
 
