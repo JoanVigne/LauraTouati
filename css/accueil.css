@@ -1,5 +1,23 @@
 /* PAGE D'ACCUEIL */
+article {
+  position: relative;
+  padding-bottom: 40px;
+}
+.en-savoir-plus {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.en-savoir-plus a {
+  color: var(--green-color);
+}
+.en-savoir-plus:hover {
+  color: var(--black-light-color);
+}
 
+/*    */
 .carousell-container {
   position: relative;
   height: 190px;
@@ -10,8 +28,9 @@
   object-fit: cover;
   opacity: 0.2;
 }
-
-.carousell-container h4 {
+.carousell-container .quoteContainer {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,6 +39,7 @@
   font-size: larger;
   margin: 0;
 }
+
 .rdv-section {
   background-color: var(--beige-color);
   padding: 0 0 25px;
@@ -54,22 +74,6 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.trois-articles article {
-  position: relative;
-}
-.trois-articles article p {
-  margin-bottom: 35px;
-}
-.trois-articles article a {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  color: var(--green-color);
-}
-.trois-articles article a:hover {
-  color: var(--black-light-color);
-}
-
 .trois-articles article:first-child {
   background-color: var(--beige-darker-color);
 }
@@ -85,10 +89,22 @@
   padding: 30px;
 }
 
+.me-connaitre article {
+  display: flex;
+  flex-direction: column;
+  max-width: 700px;
+  margin: 20px auto;
+  align-items: center;
+}
+.me-connaitre h2 {
+  font-family: "Oooh Baby", cursive;
+}
 .me-connaitre p {
   padding: 10px;
 }
-
+.me-connaitre p:nth-child(3) {
+  text-align: end;
+}
 .contact {
   background-color: var(--black-light-color);
   color: var(--beige-color);
@@ -138,7 +154,10 @@
     width: 90%;
     height: auto;
   }
-  .carousell-container h4 {
-    font-size: large;
+  .carousell-container .quoteContainer {
+    width: 100%;
+  }
+  .me-connaitre article img {
+    display: none;
   }
 }
