@@ -1,0 +1,40 @@
+section {
+  padding: 15%;
+  text-align: center;
+}
+section p {
+  max-width: fit-content;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+section h3 {
+  margin-bottom: 10px;
+}
+section h4 {
+  margin: 0;
+}
+
+.container-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-img-text img {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+.container-img-text .enfant-seul {
+  border-radius: 0;
+  height: 200px;
+  width: 200px;
+}
+.container-img-text .text {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.container-img-text .text * {
+  text-align: start;
+
+  margin-left: 10px;
+}

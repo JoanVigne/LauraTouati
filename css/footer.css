@@ -1,0 +1,5 @@
+footer {
+  background-color: var(--header-bg);
+  height: 200px;
+  border-top: 1px black solid;
+}

@@ -19,7 +19,22 @@ h3 {
 }
 
 :root {
+  --ecriture: #362f2d;
+  --en-savoir-plus: #614e0f;
+  --button-prendre-rdv: #7a9054;
   --text-color: black;
+  --header-bg: #f8f4e9;
+  --nav-bg: #d8dac3;
+  --accueil-enfant-ado-bg: #eadfbe;
+  --accueil-adulte-bg: #cca895;
+  /* page  */
+  --enfant-bg: #f6f8d6;
+  --adulte-bg: #f6e2e2;
+  --soutien-parentalite-bg: #e2f6e7;
+  --a-propos-bg-clair: #deedf7;
+  --a-propos-bg-fonce: #c6dcef;
+
+  /* vieilles couleurs */
   --black-light-color: rgb(49, 48, 48);
   --green-color: #6e894a;
   --green-clear-color: #d6e0c8;
@@ -62,10 +77,36 @@ h1 {
 h2 {
   font-size: 2em;
 }
+h3 {
+  color: var(--ecriture);
+}
 p {
   max-width: 80%;
   margin: 0 auto;
   font-family: "Oxygen", sans-serif;
+  color: var(--ecriture);
+}
+/*    */
+.carousell-container {
+  position: relative;
+  height: 190px;
+}
+.carousell-container img:first-child {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+}
+.carousell-container .quoteContainer {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-style: italic;
+  font-size: larger;
+  margin: 0;
 }
 /* BUTTON TO GO TOP  */
 #goTop {

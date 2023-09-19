@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
     <link rel="stylesheet" href="css/accueil.css" />
 
@@ -29,7 +31,7 @@
       <div class="nomEtContact">
         <img
           class="border-round"
-          src="./assets/img/accompagnement-2.jpg"
+          src="./assets/img/Logos/LAURATOUATI-LOGO.png"
           alt="LOGO LOGO"
         />
         <div class="containerNom">
@@ -53,21 +55,21 @@
           >
         </div>
       </div>
-
-      <nav>
+    </header>
+    <div class="nav-container">
+      <nav class="desktop-nav">
         <ul>
           <li>
-            <a href="">Accueil</a>
+            <a href="./index.html">Accueil</a>
           </li>
           <li>
             <a href="pages/accompagnement.html">Consultations</a>
             <div class="dropDown">
-              <a href="pages/accompagnement.html"
-                >Accompagnement individuel adulte</a
-              >
+              <a href="pages/enfant.html">Enfants & Adolescents</a>
               <a href="pages/accompagnement.html#enfant"
-                >Accompagner vos enfants</a
+                >Soutien à la parentalité</a
               >
+              <a href="pages/accompagnement.html#enfant">Adultes</a>
             </div>
           </li>
           <li>
@@ -91,21 +93,70 @@
           </li>
         </ul>
       </nav>
-    </header>
+      <!-- PHONE NAV -->
+      <div class="menu-button">
+        <span class="material-symbols-outlined burger-menu"> menu </span>
+      </div>
+
+      <nav class="phone-nav">
+        <ul>
+          <li>
+            <a href="./index.html" class="home-button">Accueil</a>
+          </li>
+          <li>
+            <a href="pages/accompagnement.html"
+              >Consultation Enfants & Adolescents</a
+            >
+          </li>
+          <li>
+            <a href="pages/accompagnement.html"
+              >Consultation Soutien à la parentalité</a
+            >
+          </li>
+          <li>
+            <a href="pages/accompagnement.html">Consultation Adultes</a>
+          </li>
+          <li>
+            <a href="pages/aPropos.html">À propos de moi</a>
+          </li>
+          <li><a href="pages/aPropos.html#maPratique">Ma pratique</a></li>
+          <li><a href="pages/aPropos.html#monParcours">Mon parcours</a></li>
+          <li>
+            <a href="pages/codeDeDeontologie.html">Code de déontologie</a>
+          </li>
+
+          <li>
+            <a href="">Lieu et contact</a>
+          </li>
+          <li>
+            <a href="">Le cabinet</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">Prise de rdv en ligne</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <main>
-      <section>
-        <div class="carousell-container">
-          <img class="accueil-1" src="./assets/img/accueil-1.jpg" alt="forêt" />
-          <div class="quoteContainer">
-            <h3>
-              “Qui mieux que vous sait vos besoins ? <br />
-              Apprendre à se connaître est le premier des soins”.
-            </h3>
-            <i> - Jean de la Fontaine.</i>
-          </div>
+      <div class="carousell-container">
+        <img
+          class="accueil-1"
+          src="./assets/img/accueil/ACCUEUIL-CITATION.gif"
+          alt="forêt"
+        />
+        <div class="quoteContainer">
+          <h3>
+            “Qui mieux que vous sait vos besoins ? <br />
+            Apprendre à se connaître est le premier des soins”.
+          </h3>
+          <i> - Jean de la Fontaine.</i>
         </div>
-      </section>
+      </div>
+
       <!-- end image -->
       <section class="rdv-section">
         <p>
@@ -209,31 +260,38 @@
       </section>
       <section class="contact">
         <article>
-          <h3>CONTACTEZ-MOI</h3>
-          <a href="mailto:lauratouati.psy@gmail.com">
-            lauratouati.psy@gmail.com mail
-          </a>
-
-          <a href="tel:+33760074137"> 07 60 07 41 37 </a>
-          <a href=""> 3 rue de la Cougar, 14000 Caen </a>
+          <ul>
+            <h3>CONTACTEZ-MOI</h3>
+            <li>
+              <a href="mailto:lauratouati.psy@gmail.com">
+                lauratouati.psy@gmail.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+33760074137"> 07 60 07 41 37 </a>
+            </li>
+            <li>
+              <a href=""> 3 rue de la Cougar, 14000 Caen </a>
+            </li>
+          </ul>
+          <ul>
+            <h3>TRANSPORT :</h3>
+            <li>
+              <p>
+                Tramway - Station François (Ligne 1) <br />
+                Bus - Placinette cendrée (Ligne 42)
+              </p>
+            </li>
+          </ul>
+          <ul>
+            <h3>PARKING :</h3>
+            <p>
+              Parking Q de Jeanne <br />
+              19 rue St Jeanne, 14000 CAEN
+            </p>
+          </ul>
         </article>
-        <article>
-          <h3>TRANSPORT :</h3>
-          <p>
-            Tramway - Station François (Ligne 1) <br />
-            Bus - Placinette cendrée (Ligne 42)
-          </p>
-        </article>
-        <article>
-          <h3>PARKING :</h3>
-          <p>
-            Parking Q de Jeanne <br />
-            19 rue St Jeanne, 14000 CAEN
-          </p>
-        </article>
-      </section>
-      <section class="map" id="map">
-        <article>
+        <article class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22427.06647178454!2d-0.41322789455338577!3d49.17957803711326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bd4c04c933%3A0x3da5749f30d00859!2s14000%20Caen%2C%20France!5e0!3m2!1sen!2sus!4v1694515115045!5m2!1sen!2sus"
             style="border: 0"
@@ -244,7 +302,9 @@
         </article>
       </section>
     </main>
+    <footer>LOGO LOGO LOGO LOGO</footer>
     <script src="./js/goTop.js"></script>
     <script src="./js/carousell.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
