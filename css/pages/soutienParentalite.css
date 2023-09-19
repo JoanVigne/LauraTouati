@@ -1,7 +1,9 @@
+body {
+  background-color: var(--soutien-parentalite-bg);
+}
 section {
   padding: 50px 15%;
   text-align: center;
-  background-color: var(--soutien-parentalite-bg);
 }
 section p {
   max-width: fit-content;

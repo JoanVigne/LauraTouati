@@ -64,10 +64,6 @@ li {
   color: var(--text-color);
 }
 
-body {
-  background: var(--beige-to-green-gradient);
-}
-
 h1 {
   font-family: "Oooh Baby", cursive;
   font-size: 3.5em;
@@ -110,12 +106,16 @@ p {
 }
 
 /* PRENDRE RDV */
+.container-rdv-en-ligne {
+  margin: 20px auto;
+}
 .rdv-en-ligne {
   background-color: var(--button-prendre-rdv);
   color: white;
   font-weight: bold;
   padding: 0 25px 5px 25px;
   border-radius: 20px;
+  margin: 10px 0;
 }
 .rdv-en-ligne:hover {
   color: var(--black-light-color);

@@ -1,7 +1,10 @@
+body {
+  background-color: var(--enfant-bg);
+}
+
 section {
   padding: 50px 15%;
   text-align: center;
-  background-color: var(--enfant-bg);
 }
 section p {
   max-width: fit-content;
