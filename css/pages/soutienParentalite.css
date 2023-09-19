@@ -1,0 +1,20 @@
+section {
+  padding: 50px 15%;
+  text-align: center;
+  background-color: var(--soutien-parentalite-bg);
+}
+section p {
+  max-width: fit-content;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+section h3 {
+  margin-bottom: 10px;
+}
+section h4 {
+  margin: 0;
+}
+
+section ul li {
+  font-weight: bold;
+}

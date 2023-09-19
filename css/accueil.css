@@ -36,16 +36,7 @@ article {
   margin: 0 20px;
   font-size: large;
 }
-.rdv-en-ligne {
-  background-color: var(--button-prendre-rdv);
-  color: white;
-  font-weight: bold;
-  padding: 0 25px 5px 25px;
-  border-radius: 20px;
-}
-.rdv-en-ligne:hover {
-  color: var(--black-light-color);
-}
+
 .trois-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

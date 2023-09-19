@@ -108,6 +108,18 @@ p {
   font-size: larger;
   margin: 0;
 }
+
+/* PRENDRE RDV */
+.rdv-en-ligne {
+  background-color: var(--button-prendre-rdv);
+  color: white;
+  font-weight: bold;
+  padding: 0 25px 5px 25px;
+  border-radius: 20px;
+}
+.rdv-en-ligne:hover {
+  color: var(--black-light-color);
+}
 /* BUTTON TO GO TOP  */
 #goTop {
   position: fixed;
