@@ -4,7 +4,7 @@ header .nomEtContact {
   align-items: center;
   background-color: var(--header-bg);
   opacity: 0.8;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 header .nomEtContact .containerNom {
@@ -12,13 +12,18 @@ header .nomEtContact .containerNom {
   animation: fadein 2s forwards;
   animation-delay: 1s;
 }
+header .nomEtContact .containerNom h2 {
+  font-weight: inherit;
+  font-size: 35px;
+}
 header .nomEtContact .containerNom h3 {
   font-weight: inherit;
+  font-size: 25px;
 }
 
 header .nomEtContact img {
-  width: 140px;
-  padding: 5px;
+  width: 190px;
+
   opacity: 0;
   animation: fadein 2s forwards;
   animation-delay: 10ms;
@@ -28,6 +33,9 @@ header .nomEtContact .etContact {
   opacity: 0;
   animation: fadein 2s forwards;
   animation-delay: 2s;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 /* le a et le logo */
@@ -36,6 +44,10 @@ header .nomEtContact .etContact a {
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
+}
+
+header .nomEtContact .etContact span {
+  padding: 5px;
 }
 
 /* MEDIA Queries */
