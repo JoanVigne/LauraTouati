@@ -83,4 +83,7 @@ article:nth-child(6) .img {
   .card-logo-text * {
     font-size: inherit;
   }
+  .container-experiences-formations {
+    flex-direction: column;
+  }
 }
