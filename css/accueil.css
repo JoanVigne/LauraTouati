@@ -122,10 +122,7 @@ article {
   .container-p-img img {
     margin-right: 0;
   }
-  .trois-articles {
-    display: flex;
-    flex-direction: column;
-  }
+
   .contact {
     flex-direction: column;
     height: auto;
@@ -143,6 +140,10 @@ article {
   }
   .carousell-container .quoteContainer {
     width: 100%;
+  }
+  .trois-articles {
+    display: flex;
+    flex-direction: column;
   }
   .me-connaitre article img {
     display: none;

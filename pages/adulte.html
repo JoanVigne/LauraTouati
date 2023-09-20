@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
-    <link rel="stylesheet" href="css/accueil.css" />
+    <link rel="stylesheet" href="../css/pages/adulte.css" />
 
     <link
       rel="stylesheet"
@@ -22,14 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <title>Accompagnement Psychologique</title>
+    <title>Adulte</title>
   </head>
   <body>
     <header>
       <div class="nomEtContact">
         <img
           class="border-round"
-          src="./assets/img/accompagnement-2.jpg"
+          src="../assets/img/Logos/LAURATOUATI-LOGO.png"
           alt="LOGO LOGO"
         />
         <div class="containerNom">
@@ -53,21 +56,19 @@
           >
         </div>
       </div>
-
-      <nav>
+    </header>
+    <div class="nav-container">
+      <nav class="desktop-nav">
         <ul>
           <li>
-            <a href="">Accueil</a>
+            <a href="../index.html">Accueil</a>
           </li>
           <li>
             <a href="pages/accompagnement.html">Consultations</a>
             <div class="dropDown">
-              <a href="pages/accompagnement.html"
-                >Accompagnement individuel adulte</a
-              >
-              <a href="pages/accompagnement.html#enfant"
-                >Accompagner vos enfants</a
-              >
+              <a href="./enfant.html">Enfants & Adolescents</a>
+              <a href="./soutienParentalite.html">Soutien à la parentalité</a>
+              <a href="pages/accompagnement.html#enfant">Adultes</a>
             </div>
           </li>
           <li>
@@ -91,200 +92,341 @@
           </li>
         </ul>
       </nav>
-    </header>
+      <!-- PHONE NAV -->
+      <div class="menu-button">
+        <span class="material-symbols-outlined burger-menu"> menu </span>
+      </div>
 
-    <h2>L’accompagnement psychologique individuel</h2>
+      <nav class="phone-nav">
+        <ul>
+          <li>
+            <a href="../index.html" class="home-button">Accueil</a>
+          </li>
+          <li>
+            <a href="./enfant.html">Consultation Enfants & Adolescents</a>
+          </li>
+          <li>
+            <a href="./soutienParentalite.html"
+              >Consultation Soutien à la parentalité</a
+            >
+          </li>
+          <li>
+            <a href="./adulte.html">Consultation Adultes</a>
+          </li>
+          <li>
+            <a href="pages/aPropos.html">À propos de moi</a>
+          </li>
+          <li><a href="pages/aPropos.html#maPratique">Ma pratique</a></li>
+          <li><a href="pages/aPropos.html#monParcours">Mon parcours</a></li>
+          <li>
+            <a href="pages/codeDeDeontologie.html">Code de déontologie</a>
+          </li>
 
-    <p>Les rencontres avec un psychologue s’aménagent selon vos besoins :</p>
+          <li>
+            <a href="">Lieu et contact</a>
+          </li>
+          <li>
+            <a href="">Le cabinet</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+          <li>
+            <a href="">Prise de rdv en ligne</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="carousell-container">
+      <img
+        class="accueil-1"
+        src="../assets/img/accompagnement-enfant/ENFANT-CITATION.gif"
+        alt="forêt"
+      />
+      <div class="quoteContainer">
+        <h3>
+          “Qui mieux que vous sait vos besoins ? <br />
+          Apprendre à se connaître est le premier des soins”.
+        </h3>
+        <i> - Jean de la Fontaine.</i>
+      </div>
+    </div>
+    <main>
+      <section>
+        <article>
+          <h3>L’accompagnement psychologique individuel</h3>
 
-    <ul>
-      <li>
-        Elles peuvent être ponctuelles pour vous soutenir dans une période
-        difficile de votre vie (deuil, burn out, changement de milieu de vie,
-        scolaire ou professionnel…).
-      </li>
-      <li>
-        Elles vous aident à mobiliser des ressources, à mettre en mouvement vos
-        représentations de la situation et les émotions associées afin de
-        cultiver vos capacités d'adaptation face aux difficultés rencontrées.
-      </li>
-    </ul>
+          <p>
+            Les rencontres avec un psychologue s’aménagent selon vos besoins :
+          </p>
+          <div class="container-text-img">
+            <div class="text">
+              <p>
+                Elles peuvent être
+                <strong
+                  >ponctuelles pour vous soutenir dans une période difficile de
+                  votre vie </strong
+                >(deuil, burn out, changement de milieu de vie, scolaire ou
+                professionnel…).
+              </p>
+              <p>
+                Elles vous aident à
+                <strong
+                  >mobiliser des ressources, à mettre en mouvement vos
+                  représentations de la situation et les émotions associées afin
+                  de cultiver vos capacités d'adaptation face aux difficultés
+                  rencontrées.
+                </strong>
+              </p>
+            </div>
+            <div class="img">
+              <img src="../assets/img/adulte/adulte-1.jpg" alt="" />
+            </div>
+          </div>
+          <p>
+            Ces rencontres peuvent également
+            <strong>
+              se poursuivre dans le temps et vous ouvrir l'espace d'un processus
+              de changement dans un cadre psychothérapeutique.</strong
+            ><br />
+            Dans ce cadre, j'utilise<strong>diverses approches</strong> qui me
+            permettent de m'adapter à vos besoins en fonction des difficultés
+            qui vous traversent.
+          </p>
 
-    <p>
-      Ces rencontres peuvent également se poursuivre dans le temps et vous
-      ouvrir l'espace d'un processus de changement dans un cadre
-      psychothérapeutique.
-    </p>
+          <p>
+            Je vous propose un <strong> espace sécurisant</strong> qui accueille
+            avec <strong> bienveillance </strong>votre singularité, vous
+            accompagne et vous écoute <strong> sans jugement </strong>tout en
+            respectant le principe <strong>de confidentialité.</strong>
+          </p>
 
-    <p>
-      Dans ce cadre, j'utilise diverses approches qui me permettent de m'adapter
-      à vos besoins en fonction des difficultés qui vous traversent.
-    </p>
+          <p>
+            Cet espace vous offre la possibilité de
+            <strong>
+              réinterroger vos liens et vos limites, vos désirs et vos
+              souffrances afin de vous représenter l’histoire qui vous
+              habite</strong
+            >
+            (transmission généalogique et histoire familiale, héritage social et
+            culturel, traumatismes…) et vous permettre de
+            <strong>reconstruire </strong> la vôtre.
+          </p>
 
-    <p>
-      Je vous propose un espace sécurisant qui accueille avec bienveillance
-      votre singularité, vous accompagne et vous écoute sans jugement tout en
-      respectant le principe de confidentialité.
-    </p>
+          <p>
+            <strong>Vous êtes l’acteur principal de votre cheminement. </strong>
+            <br />
 
-    <p>
-      Cet espace vous offre la possibilité de réinterroger vos liens et vos
-      limites, vos désirs et vos souffrances afin de vous représenter l’histoire
-      qui vous habite (transmission généalogique et histoire familiale, héritage
-      social et culturel, traumatismes…) et vous permettre de reconstruire la
-      vôtre.
-    </p>
+            En ce sens, je vous accompagne pour ouvrir sur votre chemin
+            <strong> l'accès à des ressources </strong>qui vous correspondent et
+            que vous seul pouvez saisir.
+          </p>
+        </article>
+        <div class="ligne"></div>
+        <article>
+          <h3>Le premier entretien</h3>
 
-    <p>Vous êtes l’acteur principal de votre cheminement.</p>
+          <p>
+            Le premier entretien est un temps de rencontre qui permet de
+            <strong> préciser le sens de votre démarche </strong> et de
+            construire ensemble
+            <strong>le cadre de l’accompagnement</strong> qui correspond à vos
+            besoins.
+          </p>
 
-    <p>
-      En ce sens, je vous accompagne pour ouvrir sur votre chemin l'accès à des
-      ressources qui vous correspondent et que vous seul pouvez saisir.
-    </p>
+          <p>
+            De ce premier lien, nous échangeons sur les différents éléments qui
+            motivent votre venue et font obstacle à votre épanouissement
+            personnel, pour définir ensemble <strong>votre demande.</strong>
+            <br />
+            Cela peut être lié à des difficultés vécues au quotidien, des
+            expériences récentes qui bouleversent le cours de votre vie ou des
+            expériences passées qui font retour.
+          </p>
 
-    <h2>Le premier entretien</h2>
+          <p>
+            Aussi, nous relèverons l'ensemble des aspects que vous souhaitez
+            interroger et élaborer pour ressentir un
+            <strong>"mieux être"</strong> et soulager votre quotidien. Il s'agit
+            de
+            <strong>
+              clarifier votre demande et d'évaluer vos objectifs.</strong
+            >
+          </p>
 
-    <p>
-      Le premier entretien est un temps de rencontre qui permet de préciser le
-      sens de votre démarche et de construire ensemble le cadre de
-      l’accompagnement qui correspond à vos besoins.
-    </p>
+          <p>
+            Ce premier lien permet également d'échanger sur vos éventuelles
+            <strong>
+              interrogations concernant le cadre de cet accompagnement</strong
+            >
+            : modalités d'interventions, approches psychothérapeutiques, outils
+            et méthodes pour soutenir la thérapie…
+          </p>
 
-    <p>
-      De ce premier lien, nous échangeons sur les différents éléments qui
-      motivent votre venue et font obstacle à votre épanouissement personnel,
-      pour définir ensemble votre demande.
-    </p>
+          <p>
+            Réaliser ce premier pas amorce déjà
+            <strong> une évolution </strong>en vous. Vous déciderez à la suite
+            de ce(s) premier(s) entretien(s) si vous désirez poursuivre cet
+            accompagnement psychologique à mes côtés. Nous élaborons alors un
+            cadre : durée, fréquence des entretiens et honoraires.
+          </p>
 
-    <p>
-      Cela peut être lié à des difficultés vécues au quotidien, des expériences
-      récentes qui bouleversent le cours de votre vie ou des expériences passées
-      qui font retour.
-    </p>
+          <p>
+            Nous pouvons également convenir ensemble d’une
+            <strong> orientation </strong>vers un autre professionnel ou un
+            dispositif de soin plus adapté à vos besoins.
+          </p>
 
-    <p>
-      Aussi, nous relèverons l'ensemble des aspects que vous souhaitez
-      interroger et élaborer pour ressentir un "mieux être" et soulager votre
-      quotidien. Il s'agit de clarifier votre demande et d'évaluer vos
-      objectifs.
-    </p>
+          <p>
+            La durée d'une thérapie ne peut se définir à l'avance et varie en
+            fonction de chacun. Vous êtes libre d'y mettre fin à tout moment.
+          </p>
+        </article>
+        <div class="ligne"></div>
+        <article>
+          <h3>La psychothérapie</h3>
 
-    <p>
-      Ce premier lien permet également d'échanger sur vos éventuelles
-      interrogations concernant le cadre de cet accompagnement : modalités
-      d'interventions, approches psychothérapeutiques, outils et méthodes pour
-      soutenir la thérapie…
-    </p>
+          <p>
+            Des interrogations, un état de souffrance, des difficultés
+            personnelles ou relationnelles ou plus simplement un désir de vous
+            développer ou d'apprendre à vous connaître sont autant de signes qui
+            peuvent vous amener à prendre un temps de psychothérapie.
+            <br />
+            Cette démarche vous aide à<strong>
+              vous ressourcer et à retrouver du sens.</strong
+            >
+          </p>
 
-    <p>
-      Réaliser ce premier pas amorce déjà une évolution en vous. Vous déciderez
-      à la suite de ce(s) premier(s) entretien(s) si vous désirez poursuivre cet
-      accompagnement psychologique à mes côtés. Nous élaborons alors un cadre :
-      durée, fréquence des entretiens et honoraires.
-    </p>
+          <p>
+            Le cadre psychothérapeutique s'aménage en fonction des
+            <strong> besoins singuliers</strong> qui se révèlent lors de nos
+            rencontres.
+          </p>
 
-    <p>
-      Nous pouvons également convenir ensemble d’une orientation vers un autre
-      professionnel ou un dispositif de soin plus adapté à vos besoins.
-    </p>
+          <p>
+            <strong> Un premier entretien</strong> est essentiel pour évaluer
+            les difficultés qui vous traversent et adapter les approches qui
+            s'accordent au plus juste à votre demande.
+          </p>
 
-    <p>
-      La durée d'une thérapie ne peut se définir à l'avance et varie en fonction
-      de chacun. Vous êtes libre d'y mettre fin à tout moment.
-    </p>
+          <p>
+            Mes méthodes s'ajustent selon l'âge de la personne concernée et en
+            fonction de sa sensibilité, de ses besoins et de ses capacités
+            (psychiques, cognitives, motrices, etc.) pour
+            <strong
+              >développer ses processus internes et soutenir un état
+              d'épanouissement.</strong
+            >
+          </p>
 
-    <h2>La psychothérapie</h2>
+          <p>
+            <a href="#" class="en-savoir-plus"
+              >En savoir plus sur la psychothérapie adaptée aux enfants et/ou
+              aux adolescents ></a
+            >
+          </p>
+        </article>
+        <article>
+          <h3>Le soutien psychologique</h3>
 
-    <p>
-      Des interrogations, un état de souffrance, des difficultés personnelles ou
-      relationnelles ou plus simplement un désir de vous développer ou
-      d'apprendre à vous connaître sont autant de signes qui peuvent vous amener
-      à prendre un temps de psychothérapie.
-    </p>
+          <p>
+            Je vous accueille pour
+            <strong>des séances ponctuelles ou régulières </strong> dont la
+            durée peut varier en fonction de la demande élaborée lors du premier
+            entretien.
+          </p>
 
-    <p>Cette démarche vous aide à vous ressourcer et à retrouver du sens.</p>
+          <p>
+            Dans ce cadre, je vous accompagne pour
+            <strong>vous soutenir à des périodes sensibles de votre vie</strong>
+            (deuil, situation de harcèlement, changement de milieu de vie,
+            scolaire ou professionnel, relations conflictuelles, addiction
+            etc.).
+          </p>
 
-    <p>
-      Le cadre psychothérapeutique s'aménage en fonction des besoins singuliers
-      qui se révèlent lors de nos rencontres.
-    </p>
+          <p>
+            Ces séances vous aident à
+            <strong
+              >mobiliser des ressources et à cultiver vos capacités d'adaptation
+            </strong>
+            face aux difficultés rencontrées. Je peux également vous accompagner
+            à mettre en place des méthodes pour mieux les dépasser, à l'aide de
+            différents protocoles.
+          </p>
+        </article>
+        <article>
+          <h3>Les raisons pour consulter</h3>
 
-    <p>
-      Un premier entretien est essentiel pour évaluer les difficultés qui vous
-      traversent et adapter les approches qui s'accordent au plus juste à votre
-      demande.
-    </p>
-
-    <p>
-      Mes méthodes s'ajustent selon l'âge de la personne concernée et en
-      fonction de sa sensibilité, de ses besoins et de ses capacités
-      (psychiques, cognitives, motrices, etc.) pour développer ses processus
-      internes et soutenir un état d'épanouissement.
-    </p>
-
-    <p>
-      <a href="#"
-        >En savoir plus sur la psychothérapie adaptée aux enfants et/ou aux
-        adolescents</a
-      >
-    </p>
-
-    <h2>Le soutien psychologique</h2>
-
-    <p>
-      Je vous accueille pour des séances ponctuelles ou régulières dont la durée
-      peut varier en fonction de la demande élaborée lors du premier entretien.
-    </p>
-
-    <p>
-      Dans ce cadre, je vous accompagne pour vous soutenir à des périodes
-      sensibles de votre vie (deuil, situation de harcèlement, changement de
-      milieu de vie, scolaire ou professionnel, relations conflictuelles,
-      addiction etc.).
-    </p>
-
-    <p>
-      Ces séances vous aident à mobiliser des ressources et à cultiver vos
-      capacités d'adaptation face aux difficultés rencontrées. Je peux également
-      vous accompagner à mettre en place des méthodes pour mieux les dépasser, à
-      l'aide de différents protocoles.
-    </p>
-
-    <h2>Les raisons pour consulter</h2>
-
-    <p>
-      Je vous accueille et vous accompagne pour faire face à des situations
-      telles que :
-    </p>
-
-    <ul>
-      <li>la perte, le deuil d’un proche</li>
-      <li>
-        l’annonce d’une maladie, d’un handicap, l’accompagnement d’un proche
-      </li>
-      <li>une rupture difficile</li>
-      <li>
-        un changement dans la sphère familiale : naissance, mariage, séparation,
-        famille recomposée
-      </li>
-      <li>
-        un traumatisme suite à un accident, une agression physique ou verbale
-      </li>
-      <li>
-        des difficultés professionnelles : perte d’emploi, mutation,
-        reconversion, harcèlement …
-      </li>
-      <li>des difficultés relationnelles, familiales, conjugales</li>
-      <li>un manque d’estime de soi, de confiance, d’affirmation</li>
-      <li>l’anxiété, l’angoisse, l’irritabilité</li>
-      <li>des peurs ou phobies</li>
-      <li>des troubles de l’alimentation</li>
-      <li>des troubles du sommeil</li>
-      <li>des problèmes d’addiction(s) et de dépendance(s)</li>
-      <li>
-        des questionnements sur votre identité (de genre, votre orientation
-        sexuelle, votre place dans les groupes etc.)
-      </li>
-    </ul>
+          <p>
+            <strong>
+              Je vous accueille et vous accompagne pour faire face à des
+              situations telles que :</strong
+            >
+          </p>
+          <div class="container-img-text">
+            <div class="img">
+              <!--     <img src="../assets/img/adulte/adulte-2.jpg" alt="" /> -->
+            </div>
+            <div class="text">
+              <ul>
+                <li><strong> -La perte, le deuil d’un proche </strong></li>
+                <li>
+                  <strong>
+                    -L’annonce d’une maladie, d’un handicap, l’accompagnement
+                    d’un proche
+                  </strong>
+                </li>
+                <li><strong>-Une rupture difficile</strong></li>
+                <li>
+                  <strong>-Un changement dans la sphère familiale</strong> :
+                  naissance, mariage, séparation, famille recomposée
+                </li>
+                <li>
+                  <strong>-Un traumatisme</strong> suite à un accident, une
+                  agression physique ou verbale
+                </li>
+                <li>
+                  <strong>- Des difficultés professionnelles</strong> : perte
+                  d’emploi, mutation, reconversion, harcèlement …
+                </li>
+                <li>
+                  <strong
+                    >-Des difficultés relationnelles, familiales,
+                    conjugales</strong
+                  >
+                </li>
+                <li>
+                  <strong
+                    >-Un manque d’estime de soi, de confiance,
+                    d’affirmation</strong
+                  >
+                </li>
+                <li><strong>-L’anxiété, l’angoisse, l’irritabilité</strong></li>
+                <li><strong>-Des peurs ou phobies</strong></li>
+                <li><strong>-Des troubles de l’alimentation</strong></li>
+                <li><strong>-Des troubles du sommeil</strong></li>
+                <li>
+                  <strong
+                    >-Des problèmes d’addiction(s) et de dépendance(s)</strong
+                  >
+                </li>
+                <li>
+                  <strong>- Des questionnements sur votre identité </strong>(de
+                  genre, votre orientation sexuelle, votre place dans les
+                  groupes etc.)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+      <div class="container-rdv-en-ligne">
+        <a href="" class="rdv-en-ligne">Prendre rendez-vous en ligne ></a>
+      </div>
+    </main>
+    <footer>logo logo</footer>
+    <script src="../js/goTop.js"></script>
+    <script src="../js/carousell.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>
