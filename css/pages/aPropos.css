@@ -1,5 +1,86 @@
-/* LOGO SMALLER */
-
+body {
+  background-color: var(--enfant-bg);
+}
+article {
+  padding: 20px 15%;
+}
 .logo {
   width: 120px;
+}
+
+.ligne {
+  border-bottom: 2px black solid;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+article:nth-child(1n) {
+  background-color: var(--a-propos-bg-clair);
+}
+article:nth-child(2n) {
+  background-color: var(--a-propos-bg-fonce);
+}
+.container-text-img,
+.container-img-text {
+  display: flex;
+  align-items: center;
+}
+.container-img-text p {
+  margin: auto;
+  padding: 15px;
+  max-width: fit-content;
+  text-align: justify;
+}
+
+.container-img-text .text {
+  width: 80%;
+}
+.container-img-text .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* les images differentes  */
+article:nth-child(2) .img {
+  background-image: url("../../assets/img/Aproposdemoi/Aproposdemoi_waterdrop.jpg");
+}
+article:nth-child(3) .img {
+  background-image: url("../../assets/img/Aproposdemoi/Aproposdemoi_Feuille.jpg");
+}
+article:nth-child(4) .img {
+  background-image: url("../../assets/img/Aproposdemoi/Aproposdemoi_risingsunthroughtrees.jpg");
+}
+article:nth-child(5) .img {
+  background-image: url("../../assets/img/Aproposdemoi/Aproposdemoi_japanesewavepaint.jpg");
+}
+article:nth-child(6) .img {
+  background-image: url("../../assets/img/Aproposdemoi/Aproposdemoi_psychepaint.jpg");
+}
+
+.container-experiences-formations {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container-experiences-formations .card-logo-text {
+  background-color: white;
+  width: 100%;
+  margin: 5%;
+  padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-text-img,
+  .container-img-text {
+    flex-direction: column;
+  }
+  article {
+    padding: 20px;
+  }
+  .card-logo-text * {
+    font-size: inherit;
+  }
 }
