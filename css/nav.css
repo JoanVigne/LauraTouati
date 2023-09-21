@@ -77,12 +77,12 @@ nav ul li a {
   .menu-button {
     background-color: var(--nav-bg);
     color: var(--ecriture);
-    height: 35px;
+    height: 50px;
     display: block;
   }
   .menu-button .burger-menu {
     transition: transform 0.7s ease;
-    font-size: xx-large;
+    font-size: 3em;
     font-weight: bold;
   }
   .rotate-burger {

@@ -19,4 +19,7 @@ section h4 {
 
 section ul li {
   font-weight: bold;
+  font-size: 1.2em;
+  text-align: start;
+  margin-bottom: 2px;
 }

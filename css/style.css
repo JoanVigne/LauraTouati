@@ -54,6 +54,9 @@ h3 {
   --orange-color: #ffc95f;
 }
 
+.italic {
+  font-style: italic;
+}
 a,
 ul,
 li {
@@ -75,10 +78,16 @@ h2 {
 }
 h3 {
   color: var(--ecriture);
+  font-size: 1.5em;
+  margin: 10px;
+}
+h4 {
+  font-size: 1.5em;
 }
 p {
-  max-width: 80%;
+  font-size: 1.2em;
   margin: 0 auto;
+  max-width: 80%;
   font-family: "Oxygen", sans-serif;
   color: var(--ecriture);
 }
@@ -104,10 +113,13 @@ p {
   font-size: larger;
   margin: 0;
 }
+.carousell-container .quoteContainer h3 {
+  font-size: 1.2em;
+}
 
 /* PRENDRE RDV */
 .container-rdv-en-ligne {
-  margin: 20px auto;
+  margin: 15px auto;
 }
 .rdv-en-ligne {
   background-color: var(--button-prendre-rdv);
@@ -149,10 +161,19 @@ p {
 @media only screen and (max-width: 768px) {
   article * {
     margin: 10px auto;
-    max-width: 90%;
-    font-size: larger;
   }
-
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 2.2em;
+  }
+  h4 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.8em;
+  }
   img {
     margin: 0;
     width: 60%;

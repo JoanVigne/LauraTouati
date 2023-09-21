@@ -24,7 +24,6 @@ article {
 
 .rdv-section p {
   padding: 5px 0;
-  font-size: large;
 }
 
 .rdv-section .dispo {
@@ -34,16 +33,11 @@ article {
 .rdv-section .dispo .jour {
   font-weight: bolder;
   margin: 0 20px;
-  font-size: large;
 }
 
 .trois-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.trois-articles article h3 {
-  margin: 10px;
 }
 
 .trois-articles article:first-child {
@@ -72,6 +66,7 @@ article {
 .me-connaitre h2 {
   font-family: "Oooh Baby", cursive;
   font-weight: lighter;
+  font-size: 2.3em;
 }
 .me-connaitre h3 {
   font-family: "Oxygen", sans-serif;
@@ -91,7 +86,7 @@ article {
   background-color: var(--black-light-color);
   color: var(--beige-color);
   padding: 10px;
-  height: 400px;
+  height: 450px;
 }
 .contact * {
   color: var(--beige-color);
@@ -105,8 +100,11 @@ article {
   width: 60%;
   height: 80%;
 }
-.contact article h3 {
-  font-size: larger;
+.contact article li {
+  padding: 3px;
+}
+.contact article li a {
+  font-size: 1.2em;
 }
 
 .map article {
