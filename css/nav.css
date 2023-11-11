@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
 }
 nav {
   background-color: var(--nav-bg);
@@ -23,37 +23,40 @@ nav ul li a {
   font-size: 20px;
 }
 
-.desktop-nav ul li a:hover {
-  color: var(--brown-color);
-}
-
 /* DROP DOWN MENU  */
-.dropDown {
-  margin-top: 5px;
+.desktop-nav ul li .dropDown {
+  margin-top: 7px;
+  visibility: hidden;
   opacity: 0;
   display: flex;
   flex-direction: column;
   max-height: 0;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
   position: absolute;
   top: 100%;
-  left: 20%;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--nav-bg);
   z-index: 1;
   border-radius: 10px;
 }
-.desktop-nav ul li:hover > .dropDown {
+
+.desktop-nav ul li:hover .dropDown {
+  visibility: visible;
   opacity: 1;
   max-height: 1000px;
 }
 
-.dropDown a {
+.desktop-nav ul li .dropDown a {
+  display: block;
   width: 150px;
   padding: 0;
   font-weight: lighter;
   padding: 5px;
 }
-.dropDown a:hover {
+
+.desktop-nav ul li .dropDown a:hover {
   color: var(--brown-color);
 }
 
