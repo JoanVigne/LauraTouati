@@ -24,7 +24,6 @@ header .nomEtContact .containerNom h3 {
 
 header .nomEtContact img {
   width: 190px;
-
   opacity: 0;
   animation: fadein 2s forwards;
   animation-delay: 10ms;
@@ -41,11 +40,20 @@ header .nomEtContact .etContact {
 
 /* le a et le logo */
 header .nomEtContact .etContact a {
-  font-size: 1.6em;
+  font-size: 1.5em;
+  font-family: "Oxygen";
+  font-weight: lighter;
 }
 
 header .nomEtContact .etContact span {
   padding: 5px;
+}
+header .nomEtContact .etContact .adresse1 img,
+header .nomEtContact .etContact .adresse2 img {
+  width: 25px;
+}
+header .nomEtContact .etContact img {
+  width: 21px;
 }
 
 /* MEDIA Queries */
@@ -60,12 +68,16 @@ header .nomEtContact .etContact span {
   header .nomEtContact img {
     display: none;
   }
-  .etContact {
+  header .nomEtContact .etContact {
     display: none;
   }
-  header .nomEtContact .etContact a {
-    font-size: 2em;
+  /*   header .nomEtContact .etContact {
+    width: 100%;
+    align-items: center;
   }
+  header .nomEtContact .etContact a {
+    font-size: 1.4em;
+  } */
 }
 
 @keyframes fadein {

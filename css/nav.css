@@ -94,17 +94,17 @@ nav ul li a {
 
   .phone-nav {
     display: block;
-
     overflow: hidden;
-    height: 0;
-    transition: height 0.5s ease;
+    max-height: 0;
+    transition: max-height 0.5s ease;
   }
   .phone-nav.active {
-    height: 450px;
+    max-height: 750px;
+    padding-bottom: 10px;
   }
 
   .phone-nav ul li a {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 

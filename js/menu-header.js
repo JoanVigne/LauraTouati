@@ -11,20 +11,22 @@ function toggleMenu() {
 
 /* POUR CHANGER DYNAMIQUEMENT LES ADRESSES ET TEL ET MAIL SUR TOUTES LES PAGES */
 const contentHeader = {
-  adresse: "3 rue de la Cougar, 14000 Caen",
-  telephone: "07 60 07 41 37",
-  email: "lauratouati.psy@gmail.com",
+  adresse1: "15 avenue du six Juin, 14000 CAEN",
+  adresse2: "5 rue Buquet, 14000 CAEN",
+  telephone: "06 67 44 79 16",
+  email: "ltouati.psychologue@gmail.com",
 };
 
-Object.keys(contentHeader).forEach((e) => {
-  const name = document.querySelectorAll(`.${e} a`);
-  name.forEach((element) => {
-    element.innerHTML = contentHeader[e];
-    if (e === "email") {
-      element.href = `mailto:${contentHeader[e]}`;
+Object.keys(contentHeader).forEach((key) => {
+  const elements = document.querySelectorAll(`.${key} a`);
+
+  elements.forEach((element) => {
+    element.innerHTML = contentHeader[key];
+    if (key === "email") {
+      element.href = `mailto:${contentHeader[key]}`;
     }
-    if (e === "telephone") {
-      element.href = `tel:${contentHeader[e]}`;
+    if (key === "telephone") {
+      element.href = `tel:${contentHeader[key]}`;
     }
   });
 });

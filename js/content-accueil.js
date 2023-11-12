@@ -17,7 +17,7 @@ const content = {
 };
 
 /* disponibilité */
-const disponibiliteContainer = document.querySelector(".dispo");
+/* const disponibiliteContainer = document.querySelector(".dispo");
 
 Object.keys(content.dispo).forEach((element) => {
   if (content.dispo[element].length !== 0) {
@@ -29,7 +29,7 @@ Object.keys(content.dispo).forEach((element) => {
     jourContainer.append(jour);
     disponibiliteContainer.appendChild(jourContainer);
   }
-});
+}); */
 
 /* contact complement */
 const transportList = document.querySelector(".transport-list");

@@ -22,8 +22,8 @@ article {
   padding: 0 0 25px;
 }
 
-.rdv-section p {
-  padding: 5px 0;
+.rdv-section p:first-child {
+  padding: 5px;
 }
 
 .rdv-section .dispo {
