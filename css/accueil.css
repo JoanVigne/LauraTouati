@@ -38,12 +38,17 @@ article {
 .rdv-section .dispo .jour p {
   max-width: none;
 }
-
+.rdv-section strong {
+  font-family: "Oxygen", sans-serif;
+}
 .trois-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
+.trois-articles article p {
+  text-align: justify;
+}
 .trois-articles article:first-child {
   background-color: var(--accueil-enfant-ado-bg);
 }
@@ -62,26 +67,31 @@ article {
 
 .me-connaitre article {
   display: flex;
-  flex-direction: column;
-  max-width: 700px;
   margin: 20px auto;
-  align-items: center;
+  align-items: flex-start;
 }
 .me-connaitre h2 {
   font-family: "Oooh Baby", cursive;
   font-weight: lighter;
-  font-size: 2.3em;
+  font-size: 2.8em;
 }
 .me-connaitre h3 {
-  font-family: "Oxygen", sans-serif;
   font-style: italic;
   font-weight: lighter;
+  margin-top: -10px;
 }
 .me-connaitre p {
   padding: 10px;
+  text-align: justify;
 }
 .me-connaitre p:nth-child(3) {
   text-align: end;
+}
+.me-connaitre img {
+  width: 250px;
+}
+.me-connaitre .en-savoir-plus {
+  position: inherit;
 }
 .contact {
   display: flex;

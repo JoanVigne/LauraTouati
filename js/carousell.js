@@ -1,29 +1,38 @@
 const quotes = [
   {
-    quote: ` “Qui mieux que vous sait vos besoins ? <br />
-    Apprendre à se connaître est le premier des soins.”`,
-    author: `- Jean de la Fontaine.`,
-    imgSrc: ``,
-    imgAlt: ``,
-  },
-  {
-    quote: ` “L'amour est une étoffe tissée par la nature et brodée par l'imagination.”`,
-    author: `- Voltaire.`,
-    imgSrc: ``,
-    imgAlt: ``,
-  },
-  {
-    quote: `“Le plus grand voyageur n'est pas celui qui à fait dix fois le tour du monde. <br />
-  Mais celui qui à fait une seule fois le tour de lui-même.”`,
-    author: `- Gandhi.`,
-    imgSrc: ``,
-    imgAlt: ``,
-  },
-  {
     pageTitle: `Laura Touati Psychologue - Accueil`,
     quote: `“Notre responsabilité n’est pas celle de nos maladies,
     mais celle de notre guérison”`,
     author: ``,
+    imgSrc: ``,
+    imgAlt: ``,
+  },
+  {
+    pageTitle: `À propos de Laura Touati`,
+    quote: `“Seul le désir adapté à chaque instant donne de la légèreté à nos pas, de la force a nos décisions”`,
+    author: `Catherine Bensaid`,
+    imgSrc: ``,
+    imgAlt: ``,
+  },
+  {
+    pageTitle: `Consultations adultes`,
+    quote: ` “Qui mieux que vous sait vos besoins ?
+    Apprendre à se connaître est le premier des soins.”`,
+    author: `Jean de la Fontaine.`,
+    imgSrc: ``,
+    imgAlt: ``,
+  },
+  {
+    pageTitle: `Accompagner votre enfant`,
+    quote: ` “Toi qui marche, il n'existe pas de chemin, le chemin se fait en marchant”`,
+    author: `Antonio Machado`,
+    imgSrc: ``,
+    imgAlt: ``,
+  },
+  {
+    pageTitle: `Soutient à la parentalité`,
+    quote: ` “L'amour est une étoffe tissée par la nature et brodée par l'imagination”`,
+    author: `Voltaire`,
     imgSrc: ``,
     imgAlt: ``,
   },
@@ -39,14 +48,6 @@ const documentTitle = document.title;
 
 quotes.forEach((quote) => {
   if (documentTitle === quote.pageTitle) {
-    console.log("Quote found for page title:", documentTitle);
-    console.log("Quote:", quote.quote);
-    console.log("Author:", quote.author);
-
-    console.log("quoteContainer:", quoteContainer);
-    console.log("quoteh3:", quoteh3);
-    console.log("author:", author);
-
     quoteh3.textContent = quote.quote;
     if (quote.author !== "") {
       author.innerHTML = quote.author;
