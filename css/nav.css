@@ -85,7 +85,7 @@ nav ul li a {
   }
   .menu-button .burger-menu {
     transition: transform 0.7s ease;
-    font-size: 3em;
+    width: 50px;
     font-weight: bold;
   }
   .rotate-burger {

@@ -33,7 +33,7 @@ h3 {
   --soutien-parentalite-bg: #e2f6e7;
   --a-propos-bg-clair: #deedf7;
   --a-propos-bg-fonce: #c6dcef;
-
+  --rdv-page-bg: #f8f4e9;
   /* vieilles couleurs */
   --black-light-color: rgb(49, 48, 48);
   --green-color: #6e894a;
@@ -90,7 +90,12 @@ p {
   max-width: 80%;
   font-family: "Oxygen", sans-serif;
   color: var(--ecriture);
+  text-indent: 1em; /* ALINEA */
 }
+strong {
+  font-family: "Oxygen", sans-serif;
+}
+
 /*    */
 .carousell-container {
   position: relative;
@@ -115,16 +120,30 @@ p {
 .carousell-container .quoteContainer h3 {
   font-size: 1.2em;
 }
+.text-justify,
+.text-justify * {
+  text-align: justify;
+}
+.ligne {
+  border-bottom: 2px black solid;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.espace {
+  margin: 15px;
+}
 
 /* PRENDRE RDV */
 .container-rdv-en-ligne {
-  margin: 15px auto;
+  margin: auto;
+  padding: 20px 0 25px;
 }
 .rdv-en-ligne {
   background-color: var(--button-prendre-rdv);
   color: white;
-  font-weight: bold;
-  padding: 0 25px 5px 25px;
+  font-size: 1.2em;
+  padding: 2px 25px 6px 25px;
   border-radius: 20px;
   margin: 10px 0;
 }
@@ -171,7 +190,7 @@ p {
     font-size: 2em;
   }
   p {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   img {
     margin: 0;

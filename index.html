@@ -6,14 +6,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <!--     <link rel="stylesheet" href="css/footer.css" /> -->
 
     <link rel="stylesheet" href="css/accueil.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -115,13 +111,13 @@
             <a href="pages/reiki.html">Reiki</a>
           </li>
           <li>
-            <a href="#">Prendre rdv en ligne</a>
+            <a href="./pages/rdv.html">Prendre rdv en ligne</a>
           </li>
         </ul>
       </nav>
       <!-- PHONE NAV -->
       <div class="menu-button">
-        <span class="material-symbols-outlined burger-menu"> menu </span>
+        <img class="burger-menu" src="./assets/Images/menu.png" alt="" />
       </div>
 
       <nav class="phone-nav">
@@ -166,7 +162,7 @@
             <a href="pages/reiki.html">Reiki</a>
           </li>
           <li>
-            <a href="">Prise de rdv en ligne</a>
+            <a href="./pages/rdv.html">Prendre rdv en ligne</a>
           </li>
         </ul>
       </nav>
@@ -189,6 +185,7 @@
       </div>
 
       <!-- end image -->
+
       <section class="rdv-section">
         <p>Je vous accueille :</p>
         <p>
@@ -197,15 +194,19 @@
           >
           au
         </p>
-        <p>15 avenue du six Juin, 14000 CAEN</p>
+        <div class="adresse1">
+          <p></p>
+        </div>
         <p>ET</p>
         <p>
           de <strong> 9h30 à 19h </strong> les
           <strong>mercredis, jeudis et samedis </strong>au
         </p>
-        <p>5 rue buquet, 14000 CAEN</p>
-        <div class="dispo">
-          <!-- <p class="jour">
+        <div class="adresse2">
+          <p></p>
+        </div>
+        <!--  <div class="dispo">
+          <p class="jour">
             Lundis <br />
             09h à 12h
           </p>
@@ -218,8 +219,8 @@
             Vendredis <br />
             09h à 12h <br />
             14h à 20h
-          </p> -->
-        </div>
+          </p> 
+        </div>-->
         <p>
           <strong> La téléconsultation est également possible. </strong>
         </p>
@@ -242,7 +243,7 @@
             développement de votre enfant.
           </p>
           <p class="en-savoir-plus">
-            <a href="">En savoir plus ></a>
+            <a href="./pages/enfant.html">En savoir plus ></a>
           </p>
         </article>
         <article>
@@ -259,7 +260,7 @@
             soulagement pour chacun.
           </p>
           <p class="en-savoir-plus">
-            <a href="">En savoir plus ></a>
+            <a href="./pages/soutienParentalite.html">En savoir plus ></a>
           </p>
         </article>
         <article>
@@ -271,7 +272,7 @@
             encore le souhait de mieux vous connaître.
           </p>
           <p class="en-savoir-plus">
-            <a href="">En savoir plus ></a>
+            <a href="./pages/adulte.html">En savoir plus ></a>
           </p>
         </article>
       </section>
@@ -297,7 +298,7 @@
               des pistes pour composer avec celles-ci.
             </p>
             <p class="en-savoir-plus">
-              <a href="">En savoir plus ></a>
+              <a href="./pages/aPropos.html">En savoir plus ></a>
             </p>
           </div>
           <img
@@ -309,7 +310,7 @@
       <section class="contact" id="contact">
         <article>
           <ul>
-            <h3>CONTACTEZ-MOI</h3>
+            <h3>C O N T A C T E Z - M O I</h3>
             <li class="email">
               <a href=""></a>
             </li>
@@ -323,17 +324,19 @@
               <a href="#contact"></a>
             </li>
           </ul>
-          <ul>
-            <h3>TRANSPORT :</h3>
-            <ul class="transport-list"></ul>
-          </ul>
-
-          <h3>PARKING :</h3>
-          <ul class="parking-adresse"></ul>
         </article>
         <article class="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22427.06647178454!2d-0.41322789455338577!3d49.17957803711326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bd4c04c933%3A0x3da5749f30d00859!2s14000%20Caen%2C%20France!5e0!3m2!1sen!2sus!4v1694515115045!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.827697849277!2d-0.36170812482149284!3d49.18485607767831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42bce008095f%3A0x13a4fcf05fbcfcd7!2s5%20Rue%20Buquet%2C%2014000%20Caen%2C%20Fran%C3%A7a!5e0!3m2!1spt-PT!2spt!4v1699882358957!5m2!1spt-PT!2spt"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </article>
+        <article class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.945225871656!2d-0.360166624821568!3d49.18262597783609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480a42a2ac754d0d%3A0x6f13a5747d0aed18!2s15%20Av.%20du%20Six%20Juin%2C%2014000%20Caen%2C%20Fran%C3%A7a!5e0!3m2!1spt-PT!2spt!4v1699882399437!5m2!1spt-PT!2spt"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
@@ -342,6 +345,7 @@
         </article>
       </section>
     </main>
+    <script src="./js/infos.js"></script>
     <script src="./js/goTop.js"></script>
     <script src="./js/carousell.js"></script>
     <script src="./js/menu-header.js"></script>

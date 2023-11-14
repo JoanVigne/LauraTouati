@@ -1,0 +1,61 @@
+body {
+  background-color: var(--rdv-page-bg);
+}
+
+.rdvSection h3 {
+  margin: 40px auto 30px;
+  font-size: 1.9em;
+}
+.container-rdv-en-ligne {
+  margin: 20px auto;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.card {
+  width: 270px;
+  margin: 20px;
+}
+.card * {
+  text-align: center;
+}
+.card img {
+  width: 80px;
+  margin: 20px;
+}
+.card p {
+  max-width: 90%;
+}
+.card strong {
+  font-family: "Oxygen", sans-serif;
+}
+.card:first-child {
+  background-color: #e9dfc3;
+}
+.card:nth-child(2) {
+  background-color: #ccc0a1;
+}
+
+.card:nth-child(3) {
+  background-color: #ebe4d2;
+}
+
+.prix {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.card:nth-child(3) p:last-child {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 868px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .card {
+    width: auto;
+  }
+}

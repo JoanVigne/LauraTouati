@@ -8,7 +8,7 @@ section {
 }
 section p {
   max-width: fit-content;
-  text-align: justify;
+  text-align: start;
   margin-bottom: 10px;
 }
 section h3 {
@@ -29,7 +29,6 @@ section h4 {
 }
 .text * {
   text-align: start;
-  margin-left: 10px;
 }
 /* img + text */
 .container-img-text .img {
@@ -45,12 +44,6 @@ section h4 {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-}
-
-.ligne {
-  border-bottom: 2px black solid;
-  max-width: 700px;
-  margin: 0 auto;
 }
 
 .en-savoir-plus {

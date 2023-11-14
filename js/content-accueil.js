@@ -6,14 +6,6 @@ const content = {
     Jeudis: [],
     Vendredis: ["09h à 12h", "14h à 20h"],
   },
-  transport: [
-    "Tramway - Station François (Ligne 1)",
-    "Bus - Placinette cendrée (Ligne 42)",
-  ],
-  parking: {
-    nom: "Parking Q de Jeanne",
-    adress: "19 rue St Jeanne, 14000 CAEN",
-  },
 };
 
 /* disponibilité */
@@ -32,7 +24,7 @@ Object.keys(content.dispo).forEach((element) => {
 }); */
 
 /* contact complement */
-const transportList = document.querySelector(".transport-list");
+/* const transportList = document.querySelector(".transport-list");
 Object.keys(content.transport).forEach((element) => {
   let li = document.createElement("li");
   li.innerHTML = content.transport[element];
@@ -44,3 +36,4 @@ Object.keys(content.parking).forEach((element) => {
   li.innerHTML = content.parking[element];
   parkingAdresse.append(li);
 });
+ */
