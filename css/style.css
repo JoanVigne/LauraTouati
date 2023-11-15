@@ -150,6 +150,22 @@ strong {
 .rdv-en-ligne:hover {
   color: var(--black-light-color);
 }
+
+/* EN SAVOIR PLUS */
+
+.en-savoir-plus {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.en-savoir-plus a {
+  color: var(--en-savoir-plus);
+}
+.en-savoir-plus:hover {
+  color: var(--black-light-color);
+}
 /* BUTTON TO GO TOP  */
 #goTop {
   position: fixed;
@@ -177,6 +193,9 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
+  .carousell-container .quoteContainer {
+    width: 100%;
+  }
   article * {
     margin: 10px auto;
   }

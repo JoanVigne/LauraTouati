@@ -3,19 +3,7 @@ article {
   position: relative;
   padding-bottom: 40px;
 }
-.en-savoir-plus {
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-.en-savoir-plus a {
-  color: var(--en-savoir-plus);
-}
-.en-savoir-plus:hover {
-  color: var(--black-light-color);
-}
+
 /* RDV SECTION */
 .rdv-section {
   background-color: var(--header-bg);
@@ -140,13 +128,11 @@ article {
 }
 
 @media only screen and (max-width: 768px) {
-  .accueil-1 {
+  /*   .accueil-1 {
     width: 90%;
     height: auto;
-  }
-  .carousell-container .quoteContainer {
-    width: 100%;
-  }
+  } */
+
   .trois-articles {
     display: flex;
     flex-direction: column;
@@ -156,5 +142,8 @@ article {
   }
   .contact article h3 {
     font-size: 1.5em;
+  }
+  .en-savoir-plus {
+    font-size: 1.6em;
   }
 }

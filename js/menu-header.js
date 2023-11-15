@@ -26,7 +26,6 @@ Object.keys(contentHeader).forEach((key) => {
   let passageAdresse2 = 0;
 
   elements.forEach((element) => {
-    console.log("passageAdresse2", passageAdresse2);
     element.innerHTML = contentHeader[key];
     if (key === "email") {
       element.href = `mailto:${contentHeader[key]}`;

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/nav.css" />
-    <!--     <link rel="stylesheet" href="css/footer.css" /> -->
+    <link rel="stylesheet" href="css/footer.css" />
 
     <link rel="stylesheet" href="css/accueil.css" />
 
@@ -136,7 +136,7 @@
             >
           </li>
           <li>
-            <a href="pages/accompagnement.html">Consultation Adultes</a>
+            <a href="pages/adulte.html">Consultation Adultes</a>
           </li>
 
           <li>
@@ -345,7 +345,15 @@
         </article>
       </section>
     </main>
+
     <script src="./js/infos.js"></script>
+    <script>
+      // Utilisez la fonction pour générer le balisage Schema.org
+      generateSchemaLocalBusiness(infos);
+    </script>
+    <script>
+      generateSchemaPerson(infos);
+    </script>
     <script src="./js/goTop.js"></script>
     <script src="./js/carousell.js"></script>
     <script src="./js/menu-header.js"></script>
