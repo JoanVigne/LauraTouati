@@ -124,6 +124,11 @@ strong {
 .text-justify * {
   text-align: justify;
 }
+
+.text-start * {
+  text-align: start;
+  text-indent: 0%;
+}
 .ligne {
   border-bottom: 2px black solid;
   max-width: 700px;
@@ -162,6 +167,7 @@ strong {
 }
 .en-savoir-plus a {
   color: var(--en-savoir-plus);
+  font-family: "Oxygen", sans-serif;
 }
 .en-savoir-plus:hover {
   color: var(--black-light-color);

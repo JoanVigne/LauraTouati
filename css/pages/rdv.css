@@ -2,6 +2,10 @@ body {
   background-color: var(--rdv-page-bg);
 }
 
+article {
+  max-width: 1050px;
+  margin: auto;
+}
 .rdvSection h3 {
   margin: 40px auto 30px;
   font-size: 1.9em;
@@ -13,7 +17,8 @@ body {
 .card-container {
   display: flex;
   justify-content: center;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .card {
   width: 270px;
@@ -21,6 +26,7 @@ body {
 }
 .card * {
   text-align: center;
+  text-indent: 0;
 }
 .card img {
   width: 80px;

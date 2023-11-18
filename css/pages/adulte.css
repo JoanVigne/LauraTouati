@@ -13,7 +13,7 @@ article {
   padding: 50px;
 }
 section p {
-  text-align: start;
+  text-align: justify;
   margin-bottom: 10px;
 }
 section h3 {
@@ -40,12 +40,13 @@ section h4 {
 }
 .text * {
   text-align: start;
+  font-family: "Oxygen", sans-serif;
 }
 
 /* text + img */
 .container-text-img img {
-  width: 280px;
-  height: 280px;
+  width: 230px;
+  height: 230px;
 }
 
 .en-savoir-plus {

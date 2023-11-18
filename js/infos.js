@@ -1,3 +1,5 @@
+/*   Vérifier sur Schema.org les balises à chaque modification de infos */
+/* Dans navigateur, inspecter, Elements sscript type=application/ld+json */
 const infos = {
   dispo: {
     Lundis: "",
@@ -27,6 +29,7 @@ const infos = {
     telephone: "06 67 44 79 16",
     email: "ltouati.psychologue@gmail.com",
     prix: "60€ TTC",
+    numeroAdeli: "149314999",
   },
 };
 
