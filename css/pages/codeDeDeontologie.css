@@ -2,3 +2,11 @@ main {
   background-color: var(--header-bg);
   padding: 50px;
 }
+
+p {
+  text-align: justify;
+}
+
+h3 {
+  margin: 20px auto;
+}
