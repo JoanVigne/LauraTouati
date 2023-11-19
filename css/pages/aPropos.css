@@ -77,23 +77,42 @@ section:nth-child(1n) {
   padding: 20px auto;
   max-width: none;
 }
-
-.container-experiences-formations {
+.mon-parcours h3 {
+  margin-bottom: 10px;
+}
+.mon-parcours p {
+  text-indent: 0;
+}
+.mon-parcours p:first-of-type {
+  text-align: center;
+}
+.mon-parcours .container-experiences-formations {
   display: flex;
+}
+.mon-parcours .container-experiences-formations article {
+  flex: 1;
 }
 .container-experiences-formations h4 {
-  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.container-experiences-formations article {
+  margin: 0;
+}
+.container-experiences-formations .card-logo-text,
+.container-experiences-formations .card-logo-text-details {
+  background-color: white;
+  min-height: 131px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 .container-experiences-formations .card-logo-text {
-  background-color: white;
-  margin: 0 5% 5% 5%;
   display: flex;
   align-items: center;
-  height: 110px;
   padding: 10px;
 }
 .logo {
-  width: 100px;
+  width: 120px;
+  max-height: 100px;
 }
 .container-experiences-formations .card-logo-text .text-card {
   width: 100%;
@@ -103,26 +122,28 @@ section:nth-child(1n) {
 }
 /* formations */
 .container-experiences-formations .card-logo-text-details {
-  background-color: white;
-  margin-bottom: 30px;
   padding-bottom: 5px;
 }
 .card-logo-text-details .card-logo-text {
   margin: 0;
-  height: 90px;
 }
 .card-logo-text-details .details {
   margin-top: -20px;
 }
 .card-logo-text-details .details * {
   text-align: start;
-  padding: 5px 10px;
+  padding: 3px 15px;
+  font-size: 1.1em;
 }
 
 @media only screen and (max-width: 768px) {
   .container-text-img,
   .container-img-text {
     flex-direction: column;
+  }
+  .container-experiences-formations .card-logo-text,
+  .container-experiences-formations .card-logo-text-details {
+    min-height: auto;
   }
   article {
     padding: 20px;
@@ -132,8 +153,5 @@ section:nth-child(1n) {
   }
   .container-experiences-formations {
     flex-direction: column;
-  }
-  .container-experiences-formations .card-logo-text-details {
-    margin: 0 5% 5% 5%;
   }
 }

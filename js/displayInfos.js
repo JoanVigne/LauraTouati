@@ -12,6 +12,7 @@ function toggleMenu() {
 /* infos dans infos.js */
 const contactInfos = infos.contact;
 Object.keys(contactInfos).forEach((key) => {
+  // selectionne le premier element dans les selectors
   const elements = document.querySelectorAll(`.${key} *`);
   // POUR METTRE UN PASSAGE A LA LIGNE SUR LES ADRESSES et VILLE DANS LA SECTION CONTACT
   let passageAdresse1 = 0;
@@ -45,22 +46,30 @@ Object.keys(contactInfos).forEach((key) => {
   });
 });
 
-function generalTest() {
-  testDisplayInfo(".adresse1");
-  testDisplayInfo(".adresse2");
-}
-generalTest();
-/* TEST FUNCTIONS A FAIRE DANS LA CONSOLE */
+/* TEST  pour savoir si un container d'adresse n'est pas vide ou mal rempli 
+exemple : testDisplayInfo(".adresse1");
+à faire dans la console ou ici, sur chaque page...
+*/
 function testDisplayInfo(containerSelectAvecQuerySelectorAll) {
-  console.log("Ce test donne les positions des adresses dans le DOM");
   let ToutLesElements = document.querySelectorAll(
     containerSelectAvecQuerySelectorAll
   );
+  console.log(ToutLesElements.length);
+  // si il n'y a pas de container avec cette class :
+  if (ToutLesElements.length === 0) {
+    console.error("Il n'y a pas ce container sur cette page. Details: ", {
+      exempleUtilisationFunction: `testDisplayInfo(".prix")`,
+      raison2: "Ce container n'est pas supposé être sur cette page",
+      raison3: "Les données ne sont pas au bon format",
+    });
+    return;
+  }
   ToutLesElements.forEach((element, index) => {
-    const textAdresse1 = element.firstElementChild.textContent;
-    const virgule = ",";
+    const contentOfTheFirstElementChild = element.firstElementChild.textContent;
+
     let positionDeCetteAdresseSurLEcran = element.parentNode;
-    if (textAdresse1 === "") {
+
+    if (contentOfTheFirstElementChild === "") {
       const positionX = element.offsetLeft;
       const positionY = element.offsetTop;
       console.error("Une des adresses est vide. Détails :", {
@@ -68,29 +77,9 @@ function testDisplayInfo(containerSelectAvecQuerySelectorAll) {
         positionX: positionX,
         positionY: positionY,
         index: index,
-        content: textAdresse1,
+        content: contentOfTheFirstElementChild,
       });
       throw new error("erreur content vide");
     }
-    if (textAdresse1.includes(virgule) === false) {
-      console.log(
-        "il y a un <br> à la place de la virgule sur cette adresse :",
-        positionDeCetteAdresseSurLEcran
-      );
-    }
-    console.log(
-      "Il y a une virgule dans cette adresse :",
-      positionDeCetteAdresseSurLEcran
-    );
   });
-}
-
-// fake adresse pour tester l'erreur de la function testDisplayInfo();
-function creerFakeAdresse() {
-  let containerFakeAdresse = document.createElement("div");
-  containerFakeAdresse.setAttribute("class", "adresse1");
-  let a = document.createElement("a");
-  containerFakeAdresse.append(a);
-
-  document.body.append(containerFakeAdresse);
 }
