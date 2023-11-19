@@ -1,0 +1,34 @@
+body {
+  background-color: var(--adulte-bg);
+}
+
+article {
+  max-width: 1050px;
+  margin: auto;
+  padding: 50px;
+}
+li,
+p {
+  text-align: justify;
+  max-width: 80%;
+  margin: 0 auto;
+}
+li {
+  font-size: 1.2em;
+}
+h3 {
+  margin-top: 0;
+}
+h4 {
+  text-align: start;
+  max-width: 80%;
+  margin: 20px auto;
+}
+
+.reiki-paysage {
+  margin-top: 30px;
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 25%;
+}

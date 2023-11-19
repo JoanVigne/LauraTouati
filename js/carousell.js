@@ -1,3 +1,6 @@
+// pour modifier les citations :
+// </br> = "saut de ligne"
+
 const quotes = [
   {
     pageTitle: `Laura Touati Psychologue - Accueil`,
@@ -16,7 +19,7 @@ const quotes = [
   },
   {
     pageTitle: `Consultations adultes`,
-    quote: ` “Qui mieux que vous sait vos besoins ?
+    quote: `“Qui mieux que vous sait vos besoins ?
     Apprendre à se connaître est le premier des soins.”`,
     author: `Jean de la Fontaine.`,
     imgSrc: ``,
@@ -24,7 +27,7 @@ const quotes = [
   },
   {
     pageTitle: `Accompagner votre enfant`,
-    quote: ` “Toi qui marche, il n'existe pas de chemin, le chemin se fait en marchant”`,
+    quote: `“Toi qui marche, il n'existe pas de chemin, le chemin se fait en marchant”`,
     author: `Antonio Machado`,
     imgSrc: ``,
     imgAlt: ``,
@@ -33,6 +36,13 @@ const quotes = [
     pageTitle: `Soutient à la parentalité`,
     quote: ` “L'amour est une étoffe tissée par la nature et brodée par l'imagination”`,
     author: `Voltaire`,
+    imgSrc: ``,
+    imgAlt: ``,
+  },
+  {
+    pageTitle: `Reiki`,
+    quote: `“Tu n'es là que pour une courte visite. </ br>Ne te presse pas, ne t'inquiète pas. </br> Et assure-toi de sentir les fleurs le long du chemin.”`,
+    author: `Walter Hagen`,
     imgSrc: ``,
     imgAlt: ``,
   },
@@ -48,7 +58,7 @@ const documentTitle = document.title;
 
 quotes.forEach((quote) => {
   if (documentTitle === quote.pageTitle) {
-    quoteh3.textContent = quote.quote;
+    quoteh3.innerHTML = quote.quote;
     if (quote.author !== "") {
       author.innerHTML = quote.author;
     }
