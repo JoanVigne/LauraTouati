@@ -6,19 +6,16 @@ article {
   max-width: 1050px;
   margin: auto;
 }
-section p {
+p {
   text-align: justify;
   margin-bottom: 10px;
 }
-section h3 {
+h3 {
   margin: 0;
   margin-bottom: 30px;
 }
-section h4 {
+h4 {
   margin: 0;
-}
-section article {
-  padding: 50px;
 }
 
 .en-savoir-plus {
@@ -70,4 +67,20 @@ section article {
 } */
 .container-img-text .text * {
   text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-img-text {
+    flex-direction: column;
+    max-width: none;
+  }
+  .container-img-text h4 {
+    font-size: 2em;
+  }
+  .container-img-text .text p {
+    max-width: 95%;
+  }
+  .en-savoir-plus a {
+    font-size: 1.4em;
+  }
 }

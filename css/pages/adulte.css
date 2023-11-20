@@ -2,11 +2,6 @@ body {
   background-color: var(--adulte-bg);
 }
 
-article {
-  max-width: 1050px;
-  margin: auto;
-  padding: 50px;
-}
 p {
   text-align: justify;
   margin-bottom: 10px;
@@ -55,8 +50,11 @@ h4 {
 }
 
 @media only screen and (max-width: 768px) {
-  .container-text-img {
+  .container-text-img,
+  .container-text-img,
+  .container-img-text {
     flex-direction: column;
+    max-width: 95%;
   }
   .container-text-img img {
     width: 100%;

@@ -3,7 +3,6 @@ body {
 }
 
 article {
-  padding: 40px;
   margin: auto;
   max-width: 1050px;
 }
@@ -136,6 +135,11 @@ h3 {
   .container-text-img,
   .container-img-text {
     flex-direction: column;
+    max-width: 95%;
+  }
+  .container-text-img,
+  .container-img-text p {
+    max-width: 95%;
   }
   .container-experiences-formations .card-logo-text,
   .container-experiences-formations .card-logo-text-details {

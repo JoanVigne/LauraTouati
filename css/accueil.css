@@ -22,6 +22,11 @@ article {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.trois-articles article {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 50px;
+}
 .trois-articles article p {
   text-align: justify;
 }
@@ -136,8 +141,20 @@ article {
   }
   .contact article h3 {
     font-size: 1.5em;
+    padding: 0;
+  }
+  .contact article li a {
+    font-size: inherit;
   }
   .en-savoir-plus {
     font-size: 1.6em;
+  }
+  .me-connaitre {
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  .contact .map {
+    margin: 0;
+    margin-bottom: 15px;
   }
 }

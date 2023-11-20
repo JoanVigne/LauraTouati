@@ -58,6 +58,12 @@ h3 {
 .italic {
   font-style: italic;
 }
+
+article {
+  padding: 50px;
+  max-width: 1050px;
+  margin: auto;
+}
 a,
 ul,
 li {
@@ -201,6 +207,10 @@ strong {
   .carousell-container .quoteContainer {
     width: 100%;
   }
+  article {
+    padding: 50px 5px;
+    margin: inherit;
+  }
   article * {
     margin: 10px auto;
   }
@@ -213,8 +223,15 @@ strong {
   h4 {
     font-size: 2em;
   }
-  p {
+
+  main p,
+  main li {
     font-size: 1.6em;
+    max-width: 95%;
+    text-indent: 0;
+  }
+  main ul {
+    padding-bottom: 20px;
   }
   img {
     margin: 0;
@@ -223,5 +240,8 @@ strong {
   }
   #goTop {
     top: 10%;
+  }
+  .email a {
+    word-wrap: break-word;
   }
 }

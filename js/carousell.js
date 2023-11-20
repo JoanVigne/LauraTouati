@@ -41,7 +41,7 @@ const quotes = [
   },
   {
     pageTitle: `Reiki`,
-    quote: `“Tu n'es là que pour une courte visite. </ br>Ne te presse pas, ne t'inquiète pas. </br> Et assure-toi de sentir les fleurs le long du chemin.”`,
+    quote: `“Tu n'es là que pour une courte visite. Ne te presse pas, ne t'inquiète pas. Et assure-toi de sentir les fleurs le long du chemin.”`,
     author: `Walter Hagen`,
     imgSrc: ``,
     imgAlt: ``,
