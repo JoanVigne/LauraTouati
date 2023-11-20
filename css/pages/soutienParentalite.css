@@ -1,23 +1,23 @@
 body {
   background-color: var(--soutien-parentalite-bg);
 }
-section {
+article {
   padding: 50px 15%;
   text-align: center;
 }
-section p {
+article p {
   max-width: fit-content;
   text-align: justify;
   margin-bottom: 10px;
 }
-section h3 {
+article h3 {
   margin-bottom: 50px;
 }
-section h4 {
+article h4 {
   margin: 0;
 }
 
-section ul li {
+article ul li {
   font-weight: bold;
   font-size: 1.2em;
   text-align: start;

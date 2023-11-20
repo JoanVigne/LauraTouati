@@ -17,8 +17,8 @@ article {
 .card-container {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  max-width: 1050px;
+  margin: 20px auto;
 }
 .card {
   width: 270px;
@@ -55,6 +55,11 @@ article {
 }
 .card:nth-child(3) p:last-child {
   font-style: italic;
+}
+
+.rdvSection .text-start {
+  max-width: 1050px;
+  margin: auto;
 }
 
 @media only screen and (max-width: 868px) {

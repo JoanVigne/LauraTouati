@@ -127,16 +127,11 @@ article {
 }
 
 @media only screen and (max-width: 768px) {
-  /*   .accueil-1 {
-    width: 90%;
-    height: auto;
-  } */
-
   .trois-articles {
     display: flex;
     flex-direction: column;
   }
-  .me-connaitre article img {
+  .container-description-photo img {
     display: none;
   }
   .contact article h3 {

@@ -2,9 +2,6 @@ body {
   background-color: var(--enfant-bg);
 }
 
-section {
-  text-align: center;
-}
 article {
   max-width: 1050px;
   margin: auto;
