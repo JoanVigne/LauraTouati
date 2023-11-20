@@ -67,6 +67,9 @@ li {
   color: var(--text-color);
 }
 
+li {
+  font-size: 1.1em;
+}
 h1 {
   font-family: "Oooh Baby", cursive;
   font-size: 3.5em;
