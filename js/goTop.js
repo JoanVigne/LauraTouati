@@ -3,7 +3,11 @@ buttonToTop.setAttribute("id", "goTop");
 document.body.append(buttonToTop);
 buttonToTop.setAttribute("href", "#");
 let arrowTop = document.createElement("img");
-arrowTop.setAttribute("src", "../assets/icons/goTop.png");
+if (document.title === "Laura Touati Psychologue - Accueil") {
+  arrowTop.setAttribute("src", "./assets/icons/goTop.png");
+} else {
+  arrowTop.setAttribute("src", "../assets/icons/goTop.png");
+}
 arrowTop.setAttribute("alt", "Fleche vers le haut");
 buttonToTop.append(arrowTop);
 
