@@ -7,15 +7,15 @@ article {
   margin: auto;
   padding: 50px;
 }
-section p {
+p {
   text-align: justify;
   margin-bottom: 10px;
 }
-section h3 {
+h3 {
   margin-top: 0;
   margin-bottom: 30px;
 }
-section h4 {
+h4 {
   margin: 0;
 }
 
@@ -50,6 +50,7 @@ section h4 {
   font-weight: bold;
   max-width: 80%;
   margin: auto;
+  margin-top: 10px;
   text-align: end;
 }
 

@@ -15,11 +15,26 @@ p {
 }
 h3 {
   margin-top: 0;
+  margin-bottom: 30px;
 }
 h4 {
   text-align: start;
   max-width: 80%;
   margin: 20px auto;
+}
+
+.container-text-image {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+}
+.container-text-image .text p {
+  max-width: 100%;
+}
+
+.container-text-image img {
+  width: 150px;
+  margin: 20px;
 }
 
 .reiki-paysage {

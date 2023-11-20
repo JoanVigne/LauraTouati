@@ -23,6 +23,7 @@ header .nomEtContact .containerNom h3 {
 }
 
 header .nomEtContact img {
+  padding: 5px;
   width: 190px;
   opacity: 0;
   animation: fadein 2s forwards;
@@ -38,6 +39,10 @@ header .nomEtContact .etContact {
   align-items: end;
 }
 
+header .nomEtContact .etContact > * {
+  display: flex;
+  align-items: center;
+}
 /* le a et le logo */
 header .nomEtContact .etContact a {
   font-size: 1.5em;
