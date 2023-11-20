@@ -182,7 +182,6 @@ strong {
   right: 2%;
   top: 80%;
   transform: translateY(-50%);
-  padding: 20px;
   background: white;
   border: none;
   opacity: 0;
@@ -190,9 +189,6 @@ strong {
   border-radius: 100%;
 }
 #goTop.is-visible {
-  background-image: url("../assets/icons/goTop.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   opacity: 0.8;
 }
 
