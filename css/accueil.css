@@ -41,7 +41,7 @@ article {
   background-color: var(--header-bg);
 }
 
-.me-connaitre article {
+.container-description-photo {
   display: flex;
   margin: 20px auto;
   align-items: flex-start;
@@ -82,12 +82,11 @@ article {
   color: var(--beige-color);
   font-family: "Oxygen", sans-serif;
 }
-.contact article {
-  margin: 5px;
-}
+
 .contact .map {
   width: 33%;
   height: 80%;
+  margin: 5px;
 }
 .contact article ul * {
   margin: auto;
