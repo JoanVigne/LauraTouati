@@ -56,8 +56,4 @@ h4 {
     flex-direction: column;
     max-width: 95%;
   }
-  .container-text-img img {
-    width: 100%;
-    height: fit-content;
-  }
 }

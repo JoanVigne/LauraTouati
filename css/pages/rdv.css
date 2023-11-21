@@ -23,6 +23,7 @@ article {
 .card {
   width: 270px;
   margin: 20px;
+  min-height: 320px;
 }
 .card * {
   text-align: center;

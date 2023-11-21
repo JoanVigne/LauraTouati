@@ -108,6 +108,7 @@ h3 {
 .logo {
   width: 120px;
   max-height: 100px;
+  padding: inherit;
 }
 .container-experiences-formations .card-logo-text .text-card {
   width: 100%;
@@ -136,22 +137,30 @@ h3 {
   .container-img-text {
     flex-direction: column;
     max-width: 95%;
+    padding: 0;
   }
   .container-text-img,
   .container-img-text p {
     max-width: 95%;
   }
+  .container-img-text img,
+  .container-text-img img,
+  .container-text-img .laura {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 10px;
+  }
   .container-experiences-formations .card-logo-text,
   .container-experiences-formations .card-logo-text-details {
     min-height: auto;
-  }
-  article {
-    padding: 20px;
   }
   .card-logo-text * {
     font-size: inherit;
   }
   .container-experiences-formations {
     flex-direction: column;
+  }
+  .container-img-text .text h3 {
+    text-align: unset;
   }
 }

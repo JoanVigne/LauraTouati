@@ -14,9 +14,30 @@ article h3 {
 article h4 {
   margin: 0;
 }
-
+article img {
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+}
+article ul {
+  margin: 0 auto;
+  max-width: 80%;
+}
 article ul li {
   font-weight: bold;
   text-align: start;
   margin-bottom: 2px;
+  font-family: "Oxygen", sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  article img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+  }
+  article ul {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }

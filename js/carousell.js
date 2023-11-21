@@ -21,7 +21,7 @@ const quotes = [
     pageTitle: `Consultations adultes`,
     quote: `“Qui mieux que vous sait vos besoins ?
     Apprendre à se connaître est le premier des soins.”`,
-    author: `Jean de la Fontaine.`,
+    author: ``,
     imgSrc: ``,
     imgAlt: ``,
   },

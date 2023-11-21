@@ -46,8 +46,9 @@ h4 {
   height: 200px;
   width: 200px;
 }
-.container-img-text img:first-child {
-  margin: 10px;
+
+.container-img-text .img-zen {
+  margin-right: 20px;
 }
 .container-img-text .enfant-seul {
   width: auto;
@@ -74,13 +75,7 @@ h4 {
     flex-direction: column;
     max-width: none;
   }
-  .container-img-text h4 {
-    font-size: 2em;
-  }
   .container-img-text .text p {
     max-width: 95%;
-  }
-  .en-savoir-plus a {
-    font-size: 1.4em;
   }
 }

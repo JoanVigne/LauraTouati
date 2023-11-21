@@ -78,6 +78,7 @@ article {
 .contact {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: var(--black-light-color);
   color: var(--beige-color);
   padding: 10px;
@@ -86,6 +87,9 @@ article {
 .contact * {
   color: var(--beige-color);
   font-family: "Oxygen", sans-serif;
+}
+.contact h3 {
+  font-family: "Diphylleia";
 }
 
 .contact .map {
@@ -98,6 +102,7 @@ article {
 }
 .contact article h3 {
   padding: 25px;
+  white-space: nowrap;
 }
 .contact article li {
   padding: 10px;
@@ -146,9 +151,7 @@ article {
   .contact article li a {
     font-size: inherit;
   }
-  .en-savoir-plus {
-    font-size: 1.6em;
-  }
+
   .me-connaitre {
     padding: 0;
     padding-bottom: 20px;

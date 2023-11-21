@@ -23,7 +23,6 @@ h3 {
   --ecriture: #362f2d;
   --en-savoir-plus: #614e0f;
   --button-prendre-rdv: #5b6844;
-  --text-color: black;
   --header-bg: #f8f4e9;
   --nav-bg: #d8dac3;
   --accueil-enfant-ado-bg: #eadfbe;
@@ -35,24 +34,9 @@ h3 {
   --a-propos-bg-clair: #deedf7;
   --a-propos-bg-fonce: #c6dcef;
   --rdv-page-bg: #f8f4e9;
-  /* vieilles couleurs */
   --black-light-color: rgb(49, 48, 48);
-  --green-color: #6e894a;
-  --green-clear-color: #d6e0c8;
   --brown-color: #cd9583;
   --beige-color: #f4f2e9;
-  --beige-darker-color: #d1c8a0;
-  --beige-color-gradient: linear-gradient(
-    rgba(213, 213, 227, 1) 0%,
-    rgba(255, 249, 201, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  --beige-to-green-gradient: linear-gradient(
-    rgba(255, 249, 201, 1) 0%,
-    rgba(181, 201, 154, 1) 46%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  --orange-color: #ffc95f;
 }
 
 .italic {
@@ -71,17 +55,17 @@ li {
   padding: 0;
   text-decoration: none;
   list-style-type: none;
-  color: var(--text-color);
+  color: var(--ecriture);
 }
 
 li {
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 h1 {
   font-family: "Oooh Baby", cursive;
-  font-size: 3.5em;
+  font-size: 4em;
   font-weight: inherit;
-  margin: -10px;
+  margin-bottom: -20px;
 }
 h2 {
   font-size: 2em;
@@ -204,8 +188,15 @@ strong {
 }
 
 @media only screen and (max-width: 768px) {
+  /* CAROUSELL */
   .carousell-container .quoteContainer {
     width: 100%;
+    height: 100%;
+  }
+  .carousell-container .quoteContainer h3,
+  .carousell-container .quoteContainer i {
+    margin: 0;
+    font-size: 1.3em;
   }
   article {
     padding: 50px 5px;
@@ -214,19 +205,8 @@ strong {
   article * {
     margin: 10px auto;
   }
-  h2 {
-    font-size: 2.5em;
-  }
-  h3 {
-    font-size: 2.2em;
-  }
-  h4 {
-    font-size: 2em;
-  }
-
   main p,
   main li {
-    font-size: 1.6em;
     max-width: 95%;
     text-indent: 0;
   }
