@@ -3,12 +3,18 @@ article {
   position: relative;
   padding-bottom: 40px;
 }
-
+body {
+  background-color: var(--header-bg);
+}
+footer {
+  background-color: var(--header-bg);
+}
 /* RDV SECTION */
 .rdv-section {
   background-color: var(--header-bg);
   /*   padding: 0 0 20px; */
 }
+
 .rdv-section strong {
   font-family: "Oxygen", sans-serif;
 }

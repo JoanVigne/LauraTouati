@@ -1,5 +1,5 @@
-/*   Vérifier sur Schema.org les balises à chaque modification de infos */
-/* Dans navigateur, inspecter, Elements sscript type=application/ld+json */
+/*   Vérifier sur Schema.org les balises à chaque modification des infos */
+/* Dans navigateur, inspecter, Elements script type=application/ld+json */
 const infos = {
   dispo: {
     Lundis: "",
@@ -20,10 +20,10 @@ const infos = {
     universite: "Université Paul Valéry Montpellier 3",
   },
   contact: {
-    adresse1: "5 rue Buquet, 14000 CAEN",
+    adresse1: "15 avenue du six Juin, 14000 CAEN",
     codePostal1: "14000",
     ville1: "Caen",
-    adresse2: "15 avenue du six Juin, 14000 CAEN",
+    adresse2: "5 rue Buquet, 14000 CAEN",
     codePostal2: "14000",
     ville2: "Caen",
     telephone: "06 67 44 79 16",
@@ -33,7 +33,7 @@ const infos = {
   },
 };
 
-// les dispo ne sont pas dynamiques dans la section dans index.html
+// les horaires dispo ne sont pas dynamiques dans la section dans index.html
 // les MAPS ne sont pas dynamiques, il faut changer le HTML <iframe> googlemap
 
 // Genere le schema.org avec les data de infos
