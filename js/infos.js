@@ -33,8 +33,9 @@ const infos = {
   },
 };
 
-// les horaires dispo ne sont pas dynamiques dans la section dans index.html
+// les horaires dispo ne sont pas dynamiques dans index.html class="rdv-section"
 // les MAPS ne sont pas dynamiques, il faut changer le HTML <iframe> googlemap
+// sur la page Reiki, les jours et l'adresse ne sont pas dynamique.
 
 // Genere le schema.org avec les data de infos
 // separation de type Person et type LocalBusiness
