@@ -28,7 +28,7 @@ const infos = {
     ville2: "Caen",
     telephone: "06 67 44 79 16",
     email: "ltouati.psychologue@gmail.com",
-    prix: "60€ TTC",
+    prix: "60€",
     numeroAdeli: "149314999",
   },
 };
