@@ -20,8 +20,7 @@ Le site se compose de 8 pages, chacune offrant des informations spécifiques sur
 
 ## Capture d'écran
 
-![./assets/Ltouati-demo-video.mp4]
-
+(./assets/Ltouati-demo-video.mp4)
 
 ## Contact
 
