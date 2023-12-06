@@ -1,6 +1,6 @@
 # Site Vitrine - Laura Touati, Psychologue à Caen
 
-Bienvenue sur repot du site vitrine de Laura Touati, psychologue à Caen. Ce site a été créé pour présenter les services de la psychologue et fournir des informations utiles.
+Bienvenue sur le repot du site vitrine de Laura Touati, psychologue à Caen. Ce site a été créé pour présenter les services de la psychologue et fournir des informations utiles.
 
 ## Lien du Site
 
@@ -20,9 +20,8 @@ Le site se compose de 8 pages, chacune offrant des informations spécifiques sur
 
 ## Capture d'écran
 
-![Capture d'écran du site](lien_vers_capture_d_ecran)
+![./assets/Ltouati-demo-video.mp4]
 
-> Note : Vous pouvez remplacer "lien_vers_capture_d_ecran" par le lien direct vers une capture d'écran du site ou une vidéo de présentation.
 
 ## Contact
 
