@@ -80,12 +80,12 @@ nav ul li a {
   .menu-button {
     background-color: var(--nav-bg);
     color: var(--ecriture);
-    height: 50px;
+    height: 40px;
     display: block;
   }
   .menu-button .burger-menu {
     transition: transform 0.7s ease;
-    width: 50px;
+    width: 40px;
     font-weight: bold;
   }
   .rotate-burger {

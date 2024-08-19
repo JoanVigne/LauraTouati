@@ -57,7 +57,12 @@ function createHeader(data) {
   // Add logo image
   const logoImg = document.createElement("img");
   logoImg.classList.add("border-round");
-  logoImg.src = "./assets/Images/LOGO_Laura_Vectoriel.png";
+  // catch url of the page :
+  if (window.location.href.includes("index.html")) {
+    logoImg.src = "./assets/Images/LOGO_Laura_Vectoriel.png";
+  } else {
+    logoImg.src = "../assets/Images/LOGO_Laura_Vectoriel.png";
+  }
   logoImg.alt = "logo visage arbre";
   container.appendChild(logoImg);
 
@@ -74,16 +79,30 @@ function createHeader(data) {
   // Create contact section
   const contactSection = document.createElement("div");
   contactSection.classList.add("etContact");
-
+  let logoGps = document.createElement("img");
+  logoGps.alt = "localisation";
+  let logoTel = document.createElement("img");
+  logoTel.alt = "telephone";
+  let logoMail = document.createElement("img");
+  logoMail.alt = "e-mail";
+  if (window.location.href.includes("index.html")) {
+    logoGps.src = "./assets/Images/Gps_logo.png";
+    logoTel.src = "./assets/Images/Tel_logo.png";
+    logoMail.src = "./assets/Images/Mail_logo.png";
+  } else {
+    logoGps.src = "../assets/Images/Gps_logo.png";
+    logoTel.src = "../assets/Images/Tel_logo.png";
+    logoMail.src = "../assets/Images/Mail_logo.png";
+  }
   // Add addresses
   if (data.contact.adresses) {
     data.contact.adresses.forEach((adresse) => {
       const adresseDiv = document.createElement("div");
       adresseDiv.classList.add("adresse");
       adresseDiv.innerHTML = `
-      <a href="#contact">${adresse.adresse1}</a>
-      <img src="./assets/Images/Gps_logo.png" alt="localisation" class="logo" />
-    `;
+        <a href="#contact">${adresse.adresse1}</a>
+      `;
+      adresseDiv.appendChild(logoGps.cloneNode()); // Append a clone of the logoGps image
       contactSection.appendChild(adresseDiv);
     });
   }
@@ -94,9 +113,9 @@ function createHeader(data) {
       const telephoneDiv = document.createElement("div");
       telephoneDiv.classList.add("telephone");
       telephoneDiv.innerHTML = `
-      <a href="tel:${telephone}">${telephone}</a>
-      <img src="./assets/Images/Tel_logo.png" alt="telephone" class="logo" />
-    `;
+        <a href="tel:${telephone}">${telephone}</a>
+      `;
+      telephoneDiv.appendChild(logoTel.cloneNode()); // Append a clone of the logoTel image
       contactSection.appendChild(telephoneDiv);
     });
   }
@@ -105,9 +124,9 @@ function createHeader(data) {
   const emailDiv = document.createElement("div");
   emailDiv.classList.add("email");
   emailDiv.innerHTML = `
-  <a href="mailto:${data.contact.email}">${data.contact.email}</a>
-  <img src="./assets/Images/Mail_logo.png" alt="e-mail" class="logo" />
-`;
+    <a href="mailto:${data.contact.email}">${data.contact.email}</a>
+  `;
+  emailDiv.appendChild(logoMail.cloneNode()); // Append a clone of the logoMail image
   contactSection.appendChild(emailDiv);
 
   container.appendChild(contactSection);
