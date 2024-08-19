@@ -10,11 +10,12 @@ nav {
 .desktop-nav ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .desktop-nav ul li {
   position: relative; /* Position relative pour le parent */
   padding: 10px 0;
-  width: 20%;
+  width: 22%;
 }
 
 nav ul li a {
