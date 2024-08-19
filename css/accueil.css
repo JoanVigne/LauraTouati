@@ -103,8 +103,11 @@ footer {
   height: 80%;
   margin: 5px;
 }
+.contact article {
+  padding: 0;
+}
 .contact article ul * {
-  margin: auto;
+  margin: 0 auto;
 }
 .contact article h3 {
   padding: 25px;
@@ -116,11 +119,6 @@ footer {
 
 .contact article li a {
   font-size: 1.2em;
-}
-
-.map article {
-  padding: 0;
-  height: 300px;
 }
 
 .map iframe {

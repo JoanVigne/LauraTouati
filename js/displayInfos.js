@@ -10,41 +10,48 @@ function toggleMenu() {
 }
 
 /* infos dans infos.js */
-const contactInfos = infos.contact;
-Object.keys(contactInfos).forEach((key) => {
-  // selectionne le premier element dans les selectors
-  const elements = document.querySelectorAll(`.${key} *`);
-  // POUR METTRE UN PASSAGE A LA LIGNE SUR LES ADRESSES et VILLE DANS LA SECTION CONTACT
-  let passageAdresse1 = 0;
-  let passageAdresse2 = 0;
+function displayInfoInContact() {
+  const contactInfos = infos.contact;
 
-  elements.forEach((element) => {
-    element.innerHTML = contactInfos[key];
-    if (key === "email") {
-      element.href = `mailto:${contactInfos[key]}`;
-    }
-    if (key === "telephone") {
-      element.href = `tel:${contactInfos[key]}`;
-    }
-    // POUR METTRE UN PASSAGE A LA LIGNE SUR LES ADRESSES DANS LA SECTION CONTACT
-    if (key === "adresse1") {
-      if (passageAdresse1 === 3) {
-        let adresseModifiee = contactInfos[key].replace(", ", "<br>");
-        element.innerHTML = adresseModifiee;
-      } else {
-        passageAdresse1++;
-      }
-    }
-    if (key === "adresse2") {
-      if (passageAdresse2 === 3) {
-        let adresseModifiee = contactInfos[key].replace(", ", "<br>");
-        element.innerHTML = adresseModifiee;
-      } else {
-        passageAdresse2++;
-      }
-    }
+  // Select the article element inside #contact
+  const articleElement = document.querySelector("#contact article");
+
+  // Create the ul element
+  const ulElement = document.createElement("ul");
+
+  // Create the li element for email
+  const emailLi = document.createElement("li");
+  emailLi.classList.add("email");
+  const emailLink = document.createElement("a");
+  emailLink.href = `mailto:${contactInfos.email}`;
+  emailLink.innerHTML = contactInfos.email;
+  emailLi.appendChild(emailLink);
+  ulElement.appendChild(emailLi);
+
+  // Create the li element for telephone
+  const telephoneLi = document.createElement("li");
+  telephoneLi.classList.add("telephone");
+  const telephoneLink = document.createElement("a");
+  telephoneLink.href = `tel:${contactInfos.telephones[0]}`;
+  telephoneLink.innerHTML = contactInfos.telephones[0];
+  telephoneLi.appendChild(telephoneLink);
+  ulElement.appendChild(telephoneLi);
+
+  // Loop through addresses and create li elements
+  contactInfos.adresses.forEach((adresse, index) => {
+    const adresseLi = document.createElement("li");
+    adresseLi.classList.add(`adresse${index + 1}`);
+    const adresseLink = document.createElement("a");
+    adresseLink.href = "#contact";
+    adresseLink.innerHTML = adresse.adresse1.replace(", ", "<br>");
+    adresseLi.appendChild(adresseLink);
+    ulElement.appendChild(adresseLi);
   });
-});
+
+  // Append the ul to the article
+  articleElement.appendChild(ulElement);
+}
+displayInfoInContact();
 
 /* TEST  pour savoir si un container d'adresse n'est pas vide ou mal rempli 
 exemple : testDisplayInfo(".adresse1");

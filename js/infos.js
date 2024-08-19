@@ -14,16 +14,16 @@ const infos = {
     type: "Person",
     nom: "Touati",
     prenom: "Laura",
-    profession: "Psychologue",
+    profession: "Psychologue Clinicienne",
     services: ["Consultation psychologique", "Séance Reiki"],
     diplome: "Master de psychologie clinique et psychopathologie",
     universite: "Université Paul Valéry Montpellier 3",
   },
   contact: {
-    adresse1: "15 avenue du six Juin, 14000 CAEN",
-    codePostal1: "14000",
-    ville1: "Caen",
-    telephone: "06 67 44 79 16",
+    adresses: [{ adresse1: "15 avenue du six Juin, 14000 CAEN" }],
+    city: "Caen",
+    codePostal: "14000",
+    telephones: ["06 67 44 79 16"],
     email: "ltouati.psychologue@gmail.com",
     prix: "60 euros",
     numeroAdeli: "149314999",
@@ -48,7 +48,7 @@ function generateSchemaPerson(data) {
       "@type": "CollegeOrUniversity",
       name: data.identite.universite,
     },
-    telephone: data.contact.telephone,
+    telephone: data.contact.telephones[0],
     email: data.contact.email,
   });
   document.body.appendChild(scriptTag);
@@ -57,25 +57,20 @@ function generateSchemaPerson(data) {
 function generateSchemaLocalBusiness(data) {
   const scriptTag = document.createElement("script");
   scriptTag.type = "application/ld+json";
+
+  const addresses = data.contact.adresses.map((adresse) => ({
+    "@type": "PostalAddress",
+    streetAddress: adresse.adresse1,
+    addressLocality: data.contact.city, // Use the city field directly
+    postalCode: data.contact.codePostal, // Use the postal code field directly
+  }));
+
   scriptTag.innerHTML = JSON.stringify({
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
     name: `${data.identite.prenom} ${data.identite.nom}`,
-    address: [
-      {
-        "@type": "PostalAddress",
-        streetAddress: data.contact.adresse1,
-        addressLocality: data.contact.ville1,
-        postalCode: data.contact.codePostal1,
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: data.contact.adresse2,
-        addressLocality: data.contact.ville2,
-        postalCode: data.contact.codePostal2,
-      },
-    ],
-    telephone: data.contact.telephone,
+    address: addresses,
+    telephone: data.contact.telephones[0],
     email: data.contact.email,
     priceRange: data.contact.prix,
     openingHours: [
@@ -106,14 +101,14 @@ function generateSchemaLocalBusiness(data) {
             serviceType: data.identite.services[0],
           },
         },
-        {
+        /*  {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
             name: data.identite.services[1],
             serviceType: data.identite.services[1],
           },
-        },
+        }, */
       ],
     },
   });
