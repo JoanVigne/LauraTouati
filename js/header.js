@@ -12,8 +12,10 @@ function createHeader(data) {
     window.location.pathname.endsWith("/") ||
     window.location.pathname.endsWith("/index.html")
   ) {
+    console.log("sur la page d'accueil");
     logoImg.src = "./assets/Images/LOGO_Laura_Vectoriel.png";
   } else {
+    console.log("PAS PAS sur la page d'accueil");
     logoImg.src = "../assets/Images/LOGO_Laura_Vectoriel.png";
   }
   logoImg.alt = "logo visage arbre";
