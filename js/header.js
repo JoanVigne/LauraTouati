@@ -39,10 +39,12 @@ function createHeader(data) {
     window.location.pathname.endsWith("/") ||
     window.location.pathname.endsWith("/index.html")
   ) {
+    console.log("sur la page d'accueil");
     logoGps.src = "./assets/Images/Gps_logo.png";
     logoTel.src = "./assets/Images/Tel_logo.png";
     logoMail.src = "./assets/Images/Mail_logo.png";
   } else {
+    console.log("PAS PAS sur la page d'accueil");
     logoGps.src = "../assets/Images/Gps_logo.png";
     logoTel.src = "../assets/Images/Tel_logo.png";
     logoMail.src = "../assets/Images/Mail_logo.png";
