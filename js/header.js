@@ -34,7 +34,11 @@ function createHeader(data) {
   logoTel.alt = "telephone";
   let logoMail = document.createElement("img");
   logoMail.alt = "e-mail";
-  if (window.location.href.includes("index.html")) {
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("/") ||
+    window.location.pathname.endsWith("/index.html")
+  ) {
     logoGps.src = "./assets/Images/Gps_logo.png";
     logoTel.src = "./assets/Images/Tel_logo.png";
     logoMail.src = "./assets/Images/Mail_logo.png";
