@@ -7,7 +7,11 @@ function createHeader(data) {
   const logoImg = document.createElement("img");
   logoImg.classList.add("border-round");
   // catch url of the page :
-  if (window.location.href.includes("index.html")) {
+  if (
+    window.location.pathname === "/" ||
+    window.location.pathname.endsWith("/") ||
+    window.location.pathname.endsWith("/index.html")
+  ) {
     logoImg.src = "./assets/Images/LOGO_Laura_Vectoriel.png";
   } else {
     logoImg.src = "../assets/Images/LOGO_Laura_Vectoriel.png";
