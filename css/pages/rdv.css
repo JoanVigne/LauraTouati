@@ -42,6 +42,9 @@ article {
 .card:first-child {
   background-color: #e9dfc3;
 }
+.card:first-child img {
+  margin: 28px auto;
+}
 .card:nth-child(2) {
   background-color: #ccc0a1;
 }
@@ -53,6 +56,7 @@ article {
 .prix {
   font-size: 1.2em;
   font-weight: bold;
+  font-family: "Oxygen", sans-serif;
 }
 .card:nth-child(3) p:last-child {
   font-style: italic;

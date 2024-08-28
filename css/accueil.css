@@ -83,11 +83,9 @@ footer {
 }
 .contact {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: var(--black-light-color);
   color: var(--beige-color);
-  padding: 10px;
   height: 450px;
 }
 .contact * {
@@ -99,12 +97,13 @@ footer {
 }
 
 .contact .map {
-  width: 33%;
+  width: 100%;
   height: 80%;
-  margin: 5px;
+  margin-right: 15px;
 }
 .contact article {
-  padding: 0;
+  padding: 10px;
+  margin: inherit;
 }
 .contact article ul * {
   margin: 0 auto;

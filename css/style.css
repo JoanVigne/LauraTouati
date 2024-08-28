@@ -178,6 +178,10 @@ strong {
   transition: opacity 0.4s linear;
   border-radius: 100%;
 }
+#goTop img {
+  width: 38px;
+  height: 38px;
+}
 #goTop.is-visible {
   opacity: 0.8;
 }
