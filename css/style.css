@@ -228,4 +228,7 @@ strong {
   .email a {
     word-wrap: break-word;
   }
+  .rdv-en-ligne {
+    padding: 1px 5px 3px;
+  }
 }
