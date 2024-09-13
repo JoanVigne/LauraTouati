@@ -12,7 +12,7 @@ footer {
 /* RDV SECTION */
 .rdv-section {
   background-color: var(--header-bg);
-  /*   padding: 0 0 20px; */
+  padding: 30px 0;
 }
 
 .rdv-section strong {
