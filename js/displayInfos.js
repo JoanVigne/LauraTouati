@@ -15,7 +15,10 @@ function displayInfoInContact() {
 
   // Select the article element inside #contact
   const articleElement = document.querySelector("#contact article");
-
+  if (!articleElement) {
+    console.error("probablement pas sur la page d'accueil.");
+    return;
+  }
   // Create the ul element
   const ulElement = document.createElement("ul");
 
