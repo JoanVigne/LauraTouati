@@ -26,6 +26,6 @@ https://github.com/JoanVigne/LauraTouati/assets/100919931/7e68ce66-3ea6-4c89-a95
 
 ## Contact
 
-Pour toute question ou information supplémentaire, veuillez contacter Laura Touati à l'adresse suivante : [joan.vigne.pro@gmail.com].
+Pour toute question ou information supplémentaire, veuillez contacter le dev web de Laura Touati à l'adresse suivante : [joan.vigne.pro@gmail.com].
 
 ---
