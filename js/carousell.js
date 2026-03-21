@@ -4,9 +4,9 @@
 const quotes = [
   {
     pageTitle: `Laura Touati Psychologue - Accueil`,
-    quote: `“Notre responsabilité n’est pas celle de nos maladies,
-    mais celle de notre guérison”`,
-    author: ``,
+    quote: `“Bien que nous ne soyons pas responsables du monde dans lequel nous
+naissons, nous sommes responsables de ce que nous en faisons.”`,
+    author: `Irvin D. Yalom.`,
     imgSrc: ``,
     imgAlt: ``,
   },

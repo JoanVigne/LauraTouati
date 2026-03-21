@@ -20,7 +20,7 @@ const infos = {
     universite: "Université Paul Valéry Montpellier 3",
   },
   contact: {
-    adresses: [{ adresse1: "15 avenue du six Juin, 14000 CAEN" }],
+    // adresses: [{ adresse1: "15 avenue du six Juin, 14000 CAEN" }],
     city: "Caen",
     codePostal: "14000",
     telephones: ["06 67 44 79 16"],
@@ -58,7 +58,8 @@ function generateSchemaLocalBusiness(data) {
   const scriptTag = document.createElement("script");
   scriptTag.type = "application/ld+json";
 
-  const addresses = data.contact.adresses.map((adresse) => ({
+  /*   if(data.contact.adresses) */
+  const addresses = data.contact.adresses?.map((adresse) => ({
     "@type": "PostalAddress",
     streetAddress: adresse.adresse1,
     addressLocality: data.contact.city, // Use the city field directly

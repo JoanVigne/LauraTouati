@@ -27,7 +27,6 @@ function createHeader(data) {
   identitySection.innerHTML = `
       <h1>${data.identite.prenom} ${data.identite.nom}</h1>
       <h2>${data.identite.profession}</h2>
-      <h3>Enfants - Adolescents - Adultes</h3>
     `;
   container.appendChild(identitySection);
 

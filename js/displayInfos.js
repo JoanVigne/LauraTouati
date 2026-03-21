@@ -41,15 +41,17 @@ function displayInfoInContact() {
   ulElement.appendChild(telephoneLi);
 
   // Loop through addresses and create li elements
-  contactInfos.adresses.forEach((adresse, index) => {
-    const adresseLi = document.createElement("li");
-    adresseLi.classList.add(`adresse${index + 1}`);
-    const adresseLink = document.createElement("a");
-    adresseLink.href = "#contact";
-    adresseLink.innerHTML = adresse.adresse1.replace(", ", "<br>");
-    adresseLi.appendChild(adresseLink);
-    ulElement.appendChild(adresseLi);
-  });
+  if (contactInfos.adresses) {
+    contactInfos.adresses.forEach((adresse, index) => {
+      const adresseLi = document.createElement("li");
+      adresseLi.classList.add(`adresse${index + 1}`);
+      const adresseLink = document.createElement("a");
+      adresseLink.href = "#contact";
+      adresseLink.innerHTML = adresse.adresse1.replace(", ", "<br>");
+      adresseLi.appendChild(adresseLink);
+      ulElement.appendChild(adresseLi);
+    });
+  }
 
   // Append the ul to the article
   articleElement.appendChild(ulElement);
