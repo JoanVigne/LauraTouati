@@ -207,6 +207,9 @@ strong {
 
 @media only screen and (max-width: 768px) {
   /* CAROUSELL */
+  .carousell-container {
+    height: 235px;
+  }
   .carousell-container .quoteContainer {
     width: 100%;
     height: 100%;

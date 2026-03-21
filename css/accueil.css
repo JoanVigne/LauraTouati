@@ -26,6 +26,15 @@ footer {
 .pour-qui {
   padding-bottom: 20px;
 }
+.pour-qui ul {
+  margin: 6px;
+}
+.pour-qui img {
+  width: 28%;
+  height: auto;
+  margin: auto auto 25px;
+}
+
 /* trois-articles */
 .trois-articles {
   display: grid;
@@ -155,6 +164,9 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+  .pour-qui img {
+    width: 80%;
+  }
   .trois-articles {
     display: flex;
     flex-direction: column;
