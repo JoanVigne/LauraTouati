@@ -38,7 +38,22 @@ h4 {
   width: 230px;
   height: 230px;
 }
-
+.container-text-img-under {
+  align-items: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.container-text-img-under p {
+  text-align: center;
+}
+.container-text-img-under .text li {
+  list-style-type: disc;
+  margin: 0 55px;
+}
+.container-text-img-under img {
+  width: auto;
+  height: 230px;
+}
 .en-savoir-plus {
   position: inherit;
   font-size: 1em;
@@ -55,5 +70,9 @@ h4 {
   .container-img-text {
     flex-direction: column;
     max-width: 95%;
+  }
+  .container-text-img-under img {
+    max-width: 285px;
+    height: auto;
   }
 }
