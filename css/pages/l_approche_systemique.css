@@ -2,15 +2,11 @@ body {
   background-color: var(--approche-systemique);
 }
 
-/* -------- ARTICLES -------- */
+/* -------- ARTICLES (aligné sur la_thérapie_ICV.css) -------- */
 
 article {
   max-width: 1050px;
   margin: auto;
-}
-article h3 {
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 article p {
@@ -19,62 +15,252 @@ article p {
   line-height: 1.6;
 }
 
+article h3,
+.carousell-container .quoteContainer h3 {
+  margin: 0 0 30px 0;
+  text-align: center;
+  font-family: "Diphylleia", serif;
+}
+
 article h4 {
   margin: 0;
 }
 
-/* -------- IMAGES -------- */
-
-article img {
-  display: block;
-  margin: 30px auto;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-/* -------- LISTES -------- */
+/* -------- LISTES dans les articles (même rythme que .article-with-list / ICV) -------- */
 
 article ul {
-  max-width: 700px;
-  margin: 20px auto;
+  max-width: 100%;
+  margin: 16px 0;
   padding-left: 25px;
+  padding-right: 0;
+  box-sizing: border-box;
 }
 
 article ul li {
   font-weight: 600;
   list-style-type: disc;
+  text-align: justify;
+  font-family: "Oxygen", sans-serif;
+  margin: 0 55px;
+}
+
+article ul li strong {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  article ul li {
+    margin: 0 0 0 40px;
+  }
+}
+
+/* -------- IMAGE + TEXTE (identique à la page ICV) -------- */
+
+.container-img-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.container-img-text * {
+  font-family: "Oxygen", sans-serif;
+}
+
+.container-img-text img {
+  max-height: 280px;
+  max-width: 260px;
+  height: auto;
+  width: auto;
+}
+
+.container-img-text .text {
+  max-width: 500px;
+}
+
+.container-img-text .text * {
   text-align: start;
 }
 
-/* -------- CONTAINER TEXTE + IMAGE -------- */
-
-.container-text-img-under {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+.container-img-text .text p {
+  max-width: 100%;
 }
 
-.container-text-img-under p {
-  text-align: center;
+/* Blocs image + texte dans un article : mêmes marges / gap que ICV */
+article .container-img-text {
+  max-width: 86%;
+  width: 100%;
+  margin: 24px auto;
+  padding: 0;
+  gap: 24px;
+  box-sizing: border-box;
+  justify-content: flex-start;
 }
 
-.container-text-img-under img {
-  margin-top: 25px;
-  height: 350px;
-  width: auto;
+article .container-img-text .text {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
 }
-/* -------- RESPONSIVE -------- */
+
+article .container-img-text .img {
+  flex-shrink: 0;
+}
+
+article .container-img-text .text,
+article .container-img-text .text * {
+  text-align: justify;
+}
+
+article .container-img-text .text ul {
+  max-width: 100%;
+  margin: 16px 0;
+  padding-left: 25px;
+  padding-right: 0;
+}
+
+article .container-img-text .text ul li {
+  margin: 0 55px;
+}
+
+@media only screen and (min-width: 768px) {
+  article .container-img-text .text ul li {
+    margin: 0 0 0 40px;
+  }
+}
+
+.container-img-text h4 {
+  font-size: 1.2em;
+}
+
+.container-img-text a {
+  display: inline-block;
+  text-decoration: underline;
+  color: navy;
+}
+
+.container-img-text a:hover {
+  text-decoration: none;
+  color: rgb(43, 43, 239);
+}
+
+/* -------- .article-with-list (identique ICV / thérapie des schémas) -------- */
+
+article .article-with-list {
+  padding: 0;
+  max-width: 80%;
+  margin: 12px auto 0;
+  box-sizing: border-box;
+}
+
+.article-with-list {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 clamp(56px, 7vw, 88px);
+  box-sizing: border-box;
+}
+
+.article-with-list .text {
+  margin: 0;
+  width: 100%;
+}
+
+.article-with-list-intro,
+.article-with-list .text > p {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding-left: 0;
+  text-indent: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.article-with-list-intro {
+  margin-top: 0;
+  text-align: start;
+}
+
+.article-with-list .text > p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+.article-with-list ul {
+  max-width: 100%;
+  margin: 16px 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.article-with-list ul li {
+  list-style-type: disc;
+  text-align: justify;
+  font-family: "Oxygen", sans-serif;
+  margin: 0 55px;
+}
+
+.article-with-list ul li strong {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-with-list ul li {
+    margin: 0 0 0 40px;
+  }
+}
+
+/* -------- RESPONSIVE (identique ICV + listes) -------- */
 
 @media only screen and (max-width: 768px) {
   article {
     padding: 40px 5px;
   }
-  .container-text-img-under {
-    max-width: 95%;
+
+  .article-with-list {
+    padding: 0 clamp(12px, 4vw, 20px);
   }
-  .container-text-img-under .text li {
+
+  article .article-with-list {
+    max-width: 95%;
+    margin: 12px auto 0;
+  }
+
+  .article-with-list ul li {
     margin: 0 15px;
+  }
+
+  article ul li,
+  article .container-img-text .text ul li {
+    margin: 0 15px;
+  }
+
+  .container-img-text {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  article .container-img-text {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article .container-img-text .text,
+  article .container-img-text .text * {
+    text-align: justify;
+  }
+
+  .container-img-text .text p {
+    max-width: 95%;
   }
 }
