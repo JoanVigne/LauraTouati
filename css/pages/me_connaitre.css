@@ -32,7 +32,7 @@ article.me-connaitre > p {
 /* Texte à gauche, image à droite (MeConnaitre.png) — aligné pages ICV / approche */
 .me-connaitre .container-img-text {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   gap: 24px;
   max-width: 86%;
@@ -53,6 +53,12 @@ article.me-connaitre > p {
 
 .me-connaitre .container-img-text .img {
   flex-shrink: 0;
+  align-self: center;
+}
+
+/* Plus spécifique que css/blocs-texte-image.css */
+main article.me-connaitre .container-img-text .img img {
+  align-self: center;
 }
 
 .me-connaitre .container-img-text .text p {
@@ -63,17 +69,6 @@ article.me-connaitre > p {
   text-indent: 0;
   margin-bottom: 16px;
   line-height: 1.6;
-}
-
-.me-connaitre .container-img-text .img img {
-  display: block;
-  margin: 0;
-  max-height: 280px;
-  max-width: min(260px, 32vw);
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 6px;
 }
 
 @media only screen and (max-width: 768px) {

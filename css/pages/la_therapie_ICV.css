@@ -39,7 +39,7 @@ h3.icv-pour-aller-plus-loin {
 
 .container-img-text.icv-pour-aller-plus-loin-bloc {
   margin: 0 auto 40px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 28px;
 }
@@ -52,15 +52,12 @@ h3.icv-pour-aller-plus-loin {
 
 .container-img-text.icv-pour-aller-plus-loin-bloc .img {
   flex-shrink: 0;
-  align-self: flex-start;
+  align-self: center;
 }
 
-.container-img-text.icv-pour-aller-plus-loin-bloc .img img {
-  max-height: 190px;
-  max-width: 190px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+/* Plus spécifique que css/blocs-texte-image.css (align-self sur l’img) */
+main .container-img-text.icv-pour-aller-plus-loin-bloc .img img {
+  align-self: center;
 }
 
 article h4 {
@@ -94,13 +91,6 @@ article.amenagement-seance .icv-aficv-quote p {
 
 .container-img-text * {
   font-family: "Oxygen", sans-serif;
-}
-
-.container-img-text img {
-  max-height: 280px;
-  max-width: 260px;
-  height: auto;
-  width: auto;
 }
 
 .container-img-text .img-zen {

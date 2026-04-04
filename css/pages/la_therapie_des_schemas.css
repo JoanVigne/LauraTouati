@@ -53,13 +53,6 @@ article > img {
   font-family: "Oxygen", sans-serif;
 }
 
-.container-img-text img {
-  max-height: 280px;
-  max-width: 260px;
-  height: auto;
-  width: auto;
-}
-
 .container-img-text .text {
   max-width: 500px;
 }
@@ -98,27 +91,21 @@ article .container-img-text .text * {
   text-align: justify;
 }
 
-/* Intro & « Comment la thérapie agit ? » : alignement haut des colonnes */
+/* Intro & « Comment la thérapie agit ? » : image centrée verticalement avec le texte */
 article .schemas-intro-bloc.container-img-text,
 article .schemas-therapy-agit-bloc.container-img-text {
-  align-items: flex-start;
+  align-items: center;
 }
 
 article .schemas-intro-bloc .img,
 article .schemas-therapy-agit-bloc .img {
-  align-self: flex-start;
+  align-self: center;
 }
 
-article .schemas-intro-bloc img,
-article .schemas-therapy-agit-bloc img {
-  display: block;
-  margin: 0;
-  height: auto;
-  max-height: 250px;
-  max-width: min(220px, 30vw);
-  width: auto;
-  object-fit: contain;
-  border-radius: 6px;
+/* Plus spécifique que css/blocs-texte-image.css */
+main article .container-img-text.schemas-intro-bloc .img img,
+main article .container-img-text.schemas-therapy-agit-bloc .img img {
+  align-self: center;
 }
 
 .container-img-text h4 {
@@ -136,46 +123,30 @@ article .schemas-therapy-agit-bloc img {
   color: rgb(43, 43, 239);
 }
 
-/* -------- « Pour aller plus loin » (identique à la page la_thérapie_ICV) -------- */
-
-.icv-pour-aller-plus-loin-section {
-  max-width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 clamp(48px, 9vw, 104px);
-  box-sizing: border-box;
-}
-
-h3.icv-pour-aller-plus-loin {
+/* « Pour aller plus loin » : titre centré ; texte + liens alignés à gauche sur le même axe */
+article.pour-aller-plus-loin-schemas h3.icv-pour-aller-plus-loin {
   margin: 24px 0 20px;
   text-align: center;
   font-family: "Diphylleia", serif;
 }
 
-.container-img-text.icv-pour-aller-plus-loin-bloc {
-  margin: 0 auto 40px;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 28px;
+article.pour-aller-plus-loin-schemas p {
+  font-family: "Oxygen", sans-serif;
+  text-align: left;
+  text-indent: 0;
 }
 
-.container-img-text.icv-pour-aller-plus-loin-bloc .text {
-  flex: 1 1 0;
-  min-width: 0;
-  max-width: none;
+article.pour-aller-plus-loin-schemas a {
+  display: inline;
+  text-decoration: underline;
+  color: navy;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
-.container-img-text.icv-pour-aller-plus-loin-bloc .img {
-  flex-shrink: 0;
-  align-self: flex-start;
-}
-
-.container-img-text.icv-pour-aller-plus-loin-bloc .img img {
-  max-height: 190px;
-  max-width: 190px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+article.pour-aller-plus-loin-schemas a:hover {
+  text-decoration: none;
+  color: rgb(43, 43, 239);
 }
 
 /* -------- LISTES (article-with-list + liste dans le bloc « Comment la thérapie agit ? ») -------- */
@@ -302,10 +273,6 @@ article .schemas-therapy-agit-bloc .text ul li strong {
 
   .container-img-text .text p {
     max-width: 95%;
-  }
-
-  .icv-pour-aller-plus-loin-section {
-    padding: 0 clamp(16px, 5vw, 28px);
   }
 
   article > img {

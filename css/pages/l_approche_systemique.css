@@ -71,13 +71,6 @@ article ul li strong {
   font-family: "Oxygen", sans-serif;
 }
 
-.container-img-text img {
-  max-height: 280px;
-  max-width: 260px;
-  height: auto;
-  width: auto;
-}
-
 .container-img-text .text {
   max-width: 500px;
 }

@@ -41,6 +41,25 @@ h4 {
   font-family: "Oxygen", sans-serif;
 }
 
+/*
+ * Blocs texte + image : tout le contenu dans .text, image centrée verticalement
+ * sur la hauteur du bloc (accompagnement psychologique, psychothérapie).
+ */
+@media only screen and (min-width: 769px) {
+  .accompagnement-psychologique-texte-img.container-text-img,
+  .psychotherapie-text-img.container-text-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  main article .accompagnement-psychologique-texte-img > img,
+  main article .psychotherapie-text-img > img {
+    align-self: center;
+    flex-shrink: 0;
+  }
+}
+
 .text {
   margin: 10px 0;
 }
@@ -49,16 +68,7 @@ h4 {
   font-family: "Oxygen", sans-serif;
 }
 
-/* text + img (PNG déjà arrondi : pas de crop carré ni border-radius) */
-.container-text-img img {
-  width: auto;
-  height: auto;
-  max-width: min(280px, 46vw);
-  max-height: 300px;
-  object-fit: contain;
-  border-radius: 0;
-  flex-shrink: 0;
-}
+/* taille des images texte + img : css/blocs-texte-image.css */
 .container-text-img-under {
   align-items: center;
   max-width: 80%;
@@ -73,25 +83,12 @@ article.container-text-img-under > p {
   text-align: justify;
 }
 
-.psychotherapie-text-img img {
-  width: auto;
-  height: auto;
-  max-width: min(280px, 40vw);
-  max-height: 320px;
-  object-fit: contain;
-  border-radius: 0;
-  flex-shrink: 0;
-}
 .container-text-img-under .text li {
   list-style-type: disc;
   margin: 0 55px;
 }
-.container-text-img-under img {
-  width: auto;
-  height: 230px;
-}
 
-/* « Les raisons pour consulter » : liste à gauche, image à droite (comme accueil .pour-qui-comment-row) */
+/* « Les raisons pour consulter » : image à gauche, liste à droite (≥768px) */
 .container-raisons-pour-consulter .container-text-img-under {
   display: flex;
   flex-direction: column;
@@ -110,16 +107,6 @@ article.container-text-img-under > p {
   flex-shrink: 0;
 }
 
-.container-raisons-pour-consulter .container-text-img-under img {
-  width: auto;
-  height: auto;
-  max-width: 90%;
-  max-height: 70vh;
-  object-fit: contain;
-  border-radius: 0;
-  display: block;
-}
-
 @media only screen and (min-width: 768px) {
   /* Intro : pas d’alinéa / largeur 80 % du global (sinon décalage à gauche) */
   article.container-raisons-pour-consulter > p {
@@ -131,10 +118,10 @@ article.container-text-img-under > p {
   }
 
   .container-raisons-pour-consulter .container-text-img-under {
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 20px;
     max-width: 1100px;
     padding: 0;
     box-sizing: border-box;
@@ -145,6 +132,7 @@ article.container-text-img-under > p {
     min-width: 0;
     margin: 0;
     padding-right: 0;
+    padding-left: 0;
   }
 
   .container-raisons-pour-consulter .container-text-img-under .text li {
@@ -152,23 +140,9 @@ article.container-text-img-under > p {
   }
 
   .container-raisons-pour-consulter .container-text-img-under .img {
-    flex: 0 0 auto;
-    width: min(30vw, 340px);
-    max-width: min(30vw, 340px);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: -20px;
-  }
-
-  .container-raisons-pour-consulter .container-text-img-under img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: min(50vh, 440px);
-    margin: 0;
-    margin-top: 4px;
-    object-fit: contain;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -189,16 +163,8 @@ article.container-text-img-under > p {
     flex-direction: column;
     max-width: 95%;
   }
-  .container-text-img img {
-    max-width: min(320px, 88%);
-    max-height: none;
-  }
   .container-text-img-under {
     max-width: 95%;
-  }
-  .container-text-img-under img {
-    max-width: 285px;
-    height: auto;
   }
   .container-text-img-under .text li {
     margin: 0 15px;

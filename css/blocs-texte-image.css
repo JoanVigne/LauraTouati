@@ -1,0 +1,80 @@
+/* Images en vis-à-vis d’un bloc de texte : même gabarit sur tout le site */
+:root {
+  --bloc-texte-image-max-h: 240px;
+  --bloc-texte-image-max-w: 220px;
+}
+
+main .container-img-text .img img,
+main article .container-img-text > img,
+main .container-text-img > img,
+main .container-text-img .img img,
+main .container-text-img-under .img img,
+main .pour-qui-comment-row .img img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(var(--bloc-texte-image-max-w), 34vw);
+  max-height: var(--bloc-texte-image-max-h);
+  object-fit: contain;
+  object-position: center;
+  border-radius: 6px;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+main .pour-qui-comment-row .img {
+  flex: 0 0 auto;
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+  main .pour-qui-comment-row .img img {
+    margin-bottom: 12px;
+  }
+}
+
+/* Portrait accueil : hors mobile (où l’image est masquée par accueil.css) */
+@media only screen and (min-width: 769px) {
+  main .container-description-photo > img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(var(--bloc-texte-image-max-w), 34vw);
+    max-height: var(--bloc-texte-image-max-h);
+    object-fit: contain;
+    object-position: center;
+    border-radius: 6px;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+}
+
+/* Colonne image : largeur alignée sur le pictogramme (ex. « raisons pour consulter ») */
+main .container-raisons-pour-consulter .container-text-img-under .img {
+  width: auto;
+  max-width: min(var(--bloc-texte-image-max-w), 34vw);
+  flex: 0 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  main .container-raisons-pour-consulter .container-text-img-under .img {
+    width: auto;
+    max-width: min(var(--bloc-texte-image-max-w), 34vw);
+    margin-left: 0;
+  }
+
+  main .container-raisons-pour-consulter .container-text-img-under .img img {
+    width: auto;
+    max-width: min(var(--bloc-texte-image-max-w), 34vw);
+    max-height: var(--bloc-texte-image-max-h);
+    height: auto;
+    margin: 0;
+  }
+}
