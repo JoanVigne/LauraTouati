@@ -30,8 +30,13 @@ article {
   text-indent: 0;
 }
 .card img {
-  width: 80px;
-  margin: 20px;
+  display: block;
+  width: auto;
+  height: 80px;
+  max-width: 96px;
+  margin: 24px auto 16px;
+  object-fit: contain;
+  object-position: center;
 }
 .card p {
   max-width: 90%;
@@ -41,9 +46,6 @@ article {
 }
 .card:first-child {
   background-color: #e9dfc3;
-}
-.card:first-child img {
-  margin: 28px auto;
 }
 .card:nth-child(2) {
   background-color: #ccc0a1;
@@ -65,6 +67,15 @@ article {
 .rdvSection .text-start {
   max-width: 1050px;
   margin: auto;
+  padding: 0 clamp(12px, 4vw, 24px);
+  box-sizing: border-box;
+}
+
+.rdvSection .text-start p {
+  font-style: italic;
+  text-align: justify;
+  text-indent: 0;
+  line-height: 1.55;
 }
 
 @media only screen and (max-width: 868px) {
@@ -73,5 +84,10 @@ article {
   }
   .card {
     width: auto;
+  }
+  .card img {
+    height: 72px;
+    max-width: 88px;
+    margin: 20px auto 12px;
   }
 }
