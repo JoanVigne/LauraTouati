@@ -15,13 +15,60 @@ article p {
   line-height: 1.6;
 }
 
-article h3 {
+article h3,
+.carousell-container .quoteContainer h3 {
   margin: 0 0 30px 0;
   text-align: center;
+  font-family: "Diphylleia", serif;
+}
+
+/* « Pour aller plus loin » : titre seul sur toute la largeur ; liens + image en dessous */
+.icv-pour-aller-plus-loin-section {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 clamp(48px, 9vw, 104px);
+  box-sizing: border-box;
+}
+
+h3.icv-pour-aller-plus-loin {
+  margin: 24px 0 20px;
+  text-align: center;
+  font-family: "Diphylleia", serif;
+}
+
+.container-img-text.icv-pour-aller-plus-loin-bloc {
+  margin: 0 auto 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.container-img-text.icv-pour-aller-plus-loin-bloc .text {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+.container-img-text.icv-pour-aller-plus-loin-bloc .img {
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.container-img-text.icv-pour-aller-plus-loin-bloc .img img {
+  max-height: 190px;
+  max-width: 190px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 article h4 {
   margin: 0;
+}
+
+article.amenagement-seance .icv-aficv-quote p {
+  font-style: italic;
 }
 
 /* -------- EN SAVOIR PLUS -------- */
@@ -42,6 +89,7 @@ article h4 {
   gap: 40px;
   max-width: 900px;
   margin: 40px auto;
+  box-sizing: border-box;
 }
 
 .container-img-text * {
@@ -71,6 +119,36 @@ article h4 {
   max-width: 100%;
 }
 
+/* « Une approche respectueuse de votre rythme » : compromis entre 80 % (p) et pleine largeur */
+article .container-img-text {
+  max-width: 86%;
+  width: 100%;
+  margin: 24px auto;
+  padding: 0;
+  gap: 24px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+article .container-img-text .text {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+}
+
+article .container-img-text .img {
+  flex-shrink: 0;
+}
+
+article .container-img-text .text,
+article .container-img-text .text * {
+  text-align: justify;
+}
+
+article .container-img-text .img-zen {
+  margin-right: 8px;
+}
+
 .container-img-text h4 {
   font-size: 1.2em;
 }
@@ -78,7 +156,6 @@ article h4 {
 /* -------- LIENS -------- */
 
 .container-img-text a {
-  margin-top: 10px;
   display: inline-block;
   text-decoration: underline;
   color: navy;
@@ -89,17 +166,68 @@ article h4 {
   color: rgb(43, 43, 239);
 }
 
-/* -------- LISTES -------- */
+/* -------- LISTES (aligné sur « Les raisons pour consulter », page Votre accompagnement) -------- */
+
+.article-with-list {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Un peu plus que l’article (50px) pour se rapprocher du ressenti des <p> en 80 % centrés */
+  padding: 0 clamp(56px, 7vw, 88px);
+  box-sizing: border-box;
+}
+
+.article-with-list .text {
+  margin: 0;
+  width: 100%;
+}
+
+.article-with-list-intro,
+.article-with-list .text > p {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding-left: 0;
+  text-indent: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.article-with-list-intro {
+  margin-top: 0;
+  text-align: start;
+}
+
+.article-with-list .text > p {
+  margin-top: 0;
+  text-align: justify;
+}
 
 .article-with-list ul {
-  max-width: 700px;
-  margin: 20px auto;
-  padding-left: 25px;
+  max-width: 100%;
+  margin: 16px 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .article-with-list ul li {
   list-style-type: disc;
   text-align: justify;
+  font-family: "Oxygen", sans-serif;
+  margin: 0 55px;
+}
+
+.article-with-list ul li strong {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .article-with-list ul li {
+    margin: 0 0 0 40px;
+  }
 }
 
 /* -------- RESPONSIVE -------- */
@@ -108,10 +236,34 @@ article h4 {
   article {
     padding: 40px 5px;
   }
+
+  .article-with-list {
+    padding: 0 clamp(12px, 4vw, 20px);
+  }
+
+  .article-with-list ul li {
+    margin: 0 15px;
+  }
+
   .container-img-text {
     flex-direction: column;
     gap: 20px;
     text-align: center;
+  }
+
+  .icv-pour-aller-plus-loin-section {
+    padding: 0 clamp(16px, 5vw, 28px);
+  }
+
+  article .container-img-text {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  article .container-img-text .text,
+  article .container-img-text .text * {
+    text-align: justify;
   }
 
   .container-img-text .text p {

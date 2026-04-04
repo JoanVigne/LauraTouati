@@ -30,10 +30,13 @@ footer {
   text-align: justify;
   margin-bottom: 10px;
 }
+
+/* Listes : même base que sur les pages thérapie (disc, Oxygen) */
 .pour-qui ul {
-  max-width: 700px;
-  margin: 20px auto;
-  padding-left: 25px;
+  margin: 16px 0;
+  padding-left: 24px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .pour-qui ul li {
@@ -43,10 +46,24 @@ footer {
   font-family: "Oxygen", sans-serif;
 }
 
-.pour-qui img {
-  width: auto;
-  height: 230px;
-  margin: auto auto 25px;
+.pour-qui-comment-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.pour-qui-comment-texte {
+  width: 100%;
+}
+
+.pour-qui-comment-row img {
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  max-height: 70vh;
+  margin: 0 auto 16px;
+  object-fit: contain;
 }
 
 /* trois-articles */
@@ -178,10 +195,98 @@ footer {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .pour-qui img {
-    width: 80%;
+/* Tablette, iPad, ordinateur : visio à droite de « Comment cela se passe ? » uniquement */
+@media only screen and (min-width: 768px) {
+  /* Aligné sur l’approche systémique / schémas : h3 centré, texte et listes indentés */
+  .pour-qui article h3,
+  .pour-qui .pour-qui-comment-texte h3 {
+    text-align: center;
+    margin-bottom: 20px;
   }
+
+  .pour-qui article > p,
+  .pour-qui .pour-qui-comment-texte > p {
+    margin-left: 2.5rem;
+    margin-right: auto;
+    max-width: min(40rem, calc(100% - 2.5rem));
+    text-align: justify;
+    text-indent: 0;
+    padding-left: 0;
+  }
+
+  /* Même retrait pour les deux listes (même axe que les deux <p> au-dessus) */
+  .pour-qui article > ul,
+  .pour-qui .pour-qui-comment-texte ul {
+    margin-left: 4.25rem;
+    margin-right: auto;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    max-width: min(40rem, calc(100% - 4.25rem));
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+  }
+
+  .pour-qui article > ul li,
+  .pour-qui .pour-qui-comment-texte ul li {
+    font-weight: 600;
+  }
+
+  /* Pleine largeur de l’article : même axe gauche pour « Pour qui » et « Comment cela se passe » */
+  .pour-qui-comment-row {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .pour-qui-comment-texte {
+    flex: 1 1 0;
+    min-width: 0;
+    text-align: inherit;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .pour-qui-comment-row img {
+    flex: 0 0 auto;
+    width: auto;
+    max-height: 200px;
+    max-width: min(32%, 220px);
+    margin: 0;
+    margin-top: 8px;
+    align-self: flex-start;
+    object-fit: contain;
+  }
+}
+
+/* Ordinateur : images des 3 cartes un peu plus petites que la base 84 % */
+@media only screen and (min-width: 769px) {
+  .trois-articles img {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pour-qui-comment-row {
+    gap: 10px;
+    padding: 0 4px;
+  }
+
+  .pour-qui ul {
+    padding-left: 20px;
+  }
+
+  .pour-qui-comment-row img {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .trois-articles {
     display: flex;
     flex-direction: column;
