@@ -12,6 +12,7 @@ function toggleMenu() {
 /* infos dans infos.js */
 function displayInfoInContact() {
   const contactInfos = infos.contact;
+  const toTelHref = (value) => value.replace(/[^\d+]/g, "");
 
   // Select the article element inside #contact
   const articleElement = document.querySelector("#contact article");
@@ -35,7 +36,7 @@ function displayInfoInContact() {
   const telephoneLi = document.createElement("li");
   telephoneLi.classList.add("telephone");
   const telephoneLink = document.createElement("a");
-  telephoneLink.href = `tel:${contactInfos.telephones[0]}`;
+  telephoneLink.href = `tel:${toTelHref(contactInfos.telephones[0])}`;
   telephoneLink.innerHTML = contactInfos.telephones[0];
   telephoneLi.appendChild(telephoneLink);
   ulElement.appendChild(telephoneLi);

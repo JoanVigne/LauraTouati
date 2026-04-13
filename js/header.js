@@ -1,5 +1,6 @@
 // Function to create the header
 function createHeader(data) {
+  const toTelHref = (value) => value.replace(/[^\d+]/g, "");
   const container = document.createElement("div");
   container.classList.add("nomEtContact");
 
@@ -73,7 +74,7 @@ function createHeader(data) {
       const telephoneDiv = document.createElement("div");
       telephoneDiv.classList.add("telephone");
       telephoneDiv.innerHTML = `
-        <a href="tel:${telephone}">${telephone}</a>
+        <a href="tel:${toTelHref(telephone)}">${telephone}</a>
       `;
       telephoneDiv.appendChild(logoTel.cloneNode()); // Append a clone of the logoTel image
       contactSection.appendChild(telephoneDiv);
